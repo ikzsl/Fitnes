@@ -1,0 +1,230 @@
+.promo {
+
+  background-color: $red;
+  background: linear-gradient(45deg, #003D85 , #B80027 70%);
+  min-height: 850px;
+  color: $white;
+  padding: 0 50px;
+  margin-bottom: 110px;
+  padding-top: 50px;
+  overflow: hidden;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 25px;
+    padding-top: 150px;
+    margin-bottom: 55px;
+    min-height: 686px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
+    padding-top: 100px;
+    margin-bottom: 40px;
+    min-height: 650px;
+  }
+}
+
+.promo__content-wrapper {
+  max-width: 1410px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column-reverse;
+  }
+}
+
+.promo__desc-wrapper {
+  position: relative;
+  margin: 0;
+  width: 60%;
+
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 100%;
+    top: 0;
+    width: 500px;
+    height: 556px;
+    background-image: url("../img/superman@1x.png");
+    background-size: contain;
+
+    @media only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+      background-image: url("../img/superman@2x.png");
+    }
+  }
+
+
+  @media (max-width: $tablet-width) {
+    width: 65%;
+
+    &::after {
+      right: 5px;
+      top: -20px;
+      width: 465px;
+      height: 340px;
+    }
+
+    &::before {
+      left: 500px;
+      top: -160px;
+      width: 500px;
+      height: 500px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+
+    &::after {
+      left: 10px;
+      top: 0;
+      width: 300px;
+      height: 220px;
+    }
+
+    &::before {
+      left: 200px;
+      top: -100px;
+      width: 480px;
+      height: 480px;
+    }
+  }
+}
+
+.promo__headline {
+  white-space: nowrap;
+  position: relative;
+  font-family: $roboto-bold;
+  font-size: 80px;
+  line-height: 94px;
+  text-transform: uppercase;
+  margin: 0;
+  padding-top: 50px;
+  z-index: 1;
+
+
+  @media (max-width: $tablet-width) {
+    width: 400px;
+    white-space: normal;
+    font-size: 60px;
+    line-height: 70px;
+    margin-left: 60px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 40px;
+    line-height: 47px;
+    margin: 0;
+    padding-top: 200px;
+  }
+}
+
+.promo__desc {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  line-height: 34px;
+  font-size: 22px;
+  margin-left: 100px;
+  margin-bottom: 46px;
+  max-width: 680px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: -100px;
+    width: 66px;
+    height: 2px;
+    background-color: #ffffff;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 156%;
+    margin-left: 120px;
+
+    &::before {
+      left: -50px;
+      width: 33px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+
+    margin-left: 50px;
+  }
+}
+
+.promo__action {
+  margin-left: 100px;
+  z-index: 1;
+
+  @media (max-width: $tablet-width) {
+    margin-left: 120px;
+  }
+
+  @media (max-width: $mobile-width) {
+    // display: inline-block;
+    margin: 0;
+  }
+}
+
+.promo__action-text-desktop {
+  display: inline;
+  font-weight: bold;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+
+.promo__action-text-mobile {
+  display: none;
+
+  @media (max-width: $mobile-width) {
+    display: inline;
+  }
+}
+
+.promo__main-image {
+  margin-right: -70px;
+
+  @media (max-width: $tablet-width) {
+    position: relative;
+    width: 465px;
+    height: 340px;
+  }
+
+  @media (max-width: $mobile-width) {
+    align-self: center;
+    margin: 0;
+    left: 20px;
+    width: 301px;
+    height: 220px;
+  }
+}
+
+.promo__scroll-down {
+  position: absolute;
+  top: 300px;
+  display: block;
+  transform: rotate(-90deg) translateY(-40px) translateX(-450px);
+  text-decoration: none;
+  color: $white;
+  opacity: 0.5;
+  font-size: 14px;
+  line-height: 16px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}

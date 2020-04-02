@@ -1,0 +1,113 @@
+.about {
+  // border: 1px solid red;
+  padding: 0 150px;
+  padding-bottom: 110px;
+
+  //   margin: 0 150px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 25px;
+    padding-bottom: 85px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 20px;
+    padding-bottom: 65px;
+  }
+}
+
+.about__wrapper {
+  position: relative;
+  display: flex;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 170px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 170px;
+    height: 310px;
+    background-image: url("../img/2005@1x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+      background-image: url("../img/2005@2x.png");
+    }
+
+    @media (max-width: $tablet-width) {
+      min-width: 180px;
+      height: 360px;
+    }
+
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 200px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 0;
+  }
+}
+
+.about__description-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 310px;
+
+  @media (max-width: $tablet-width) {
+    min-height: 350px;
+  }
+}
+
+.about__description-wrapper h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $roboto;
+  font-weight: normal;
+  color: $gray-headline;
+
+  font-size: 36px;
+  line-height: 50px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 25px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+.about__description-wrapper p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 21px;
+  color: $gray-headline;
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 40px;
+  }
+}
+
+.about__button {
+  align-self: flex-start;
+}

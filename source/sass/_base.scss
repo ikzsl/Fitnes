@@ -1,0 +1,24 @@
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $roboto;
+  overflow-x: hidden;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.lock {
+  overflow: hidden;
+}

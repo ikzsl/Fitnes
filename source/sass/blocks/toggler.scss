@@ -1,0 +1,42 @@
+.toggler {
+  position: absolute;
+  display: none;
+  background-color: transparent;
+  outline: none;
+
+  @media (max-width: $mobile-width) {
+    display: block;
+    top: 28px;
+    right: 10px;
+    width: 17px;
+    height: 17px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    // flex-direction: column;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 8px;
+      right: 0;
+      width: 17px;
+      height: 1px;
+      background-color: $gray-line;
+    }
+  }
+}
+
+.rolled ~ .toggler {
+  @media (max-width: $mobile-width) {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 8px;
+      width: 1px;
+      height: 17px;
+      background-color: $gray-line;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  @media (max-width: $tablet-width) {
+    flex-wrap: nowrap;
+    width: auto;
+  }
+}
+
+.links__item {
+  display: flex;
+  margin-right: 10px;
+}
+
+.links__link {
+  text-decoration: none;
+  color: inherit;
+
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    color: #000000;
+  }
+}
