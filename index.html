@@ -5,8 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="Description" content="Smart Device - производство и монтаж печатных плат, поставка комплектующих, блоков и модулей">
-  <title>Smart Device</title>
+  <meta name="Description" content="Фитнес центр Supergym - Тренажёрный зал, Групповые занятия, Кардио-зона ">
+  <title>Фитнес центр - Supergym</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -58,49 +58,39 @@
   </div>
   <div class="wrapper">
     <header class="page-header">
+
       <div class="page-header__wrapper">
-        <div class="page-header__nav-wrapper">
-          <a class="page-header__logo-link">
-            <picture>
-              <source media="(max-width: 768px)" srcset="img/logo-mobile.svg">
-              <img src="img/logo.svg" width="202" height="52" alt="Логотип Smart Device" class="page-header__logo">
-            </picture>
-          </a>
-          <ul class="page-header__nav">
-            <li class="page-header__nav-item">
-              <a class="page-header__link page-header__link--mail" href="mailto:info@sd.ru">
-                <svg class="page-header__pic" width="19" height="18" viewBox="0 0 27 26">
-                  <use xlink:href="#icon-mail"></use>
-                </svg>
-                <span class="page-header__nav-item-text">info@sd.ru</span>
-              </a>
-            </li>
-            <li class="page-header__nav-item ">
-              <a class="page-header__link page-header__link--tel" href="tel:+74950005252">
-                <svg class="page-header__pic" width="18" height="18" viewBox="0 0 27 26">
-                  <use xlink:href="#icon-phone"></use>
-                </svg>
-                <span class="page-header__nav-item-text">+7 (495) 000 52 52</span>
-              </a>
-            </li>
-          </ul>
-          <a class="page-header__callback button button--callback" href="#">Заказать звонок</a>
-        </div>
+        <a class="page-header__logo-link">
+          <img src="img/logo.svg" width="90" height="20" alt="Логотип Supergym" class="page-header__logo">
+        </a>
+        <a class="page-header__link" href="tel:+78005555555">
+          8-800-555-55-55
+        </a>
+
       </div>
+
     </header>
     <main class="page-main">
-      <section class="promo">
-        <div class="promo__content-wrapper">
-          <div class="promo__desc-wrapper">
-            <h1 class="promo__headline">Печатные платы</h1>
-            <h1 class="promo__headline--bold">Печатные платы</h1>
-            <p class="promo__desc">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <a class="promo__action button button--action" href="#feedback-form">
-              <span class="promo__action-text-desktop"> Получить бесплатную консультацию </span>
-              <span class="promo__action-text-mobile"> Бесплатная консультация </span>
-            </a>
+      <section class="main">
+        <div class="main__content-wrapper">
+          <div class="main__desc-wrapper">
+            <span class="main__desc-town">Омск</span>
+            <h1 class="main__headline">Фитнес <br>центр</h1>
+            <p class="main__desc">Тренажёрный зал Групповые занятия Кардио-зона</p>
+            <a class="main__action button button--main-action" href="#feedback-form">
+              Купить абонемент </a>
           </div>
-          <a href="#advantages" class="promo__scroll-down">Скролл вниз</a>
+          <ul class="main__social-list">
+            <li class="main__social-item">
+              <a href="#" class="main__social-link">FB</a>
+            </li>
+            <li class="main__social-item">
+              <a href="#" class="main__social-link">VK</a>
+            </li>
+            <li class="main__social-item">
+              <a href="#" class="main__social-link">IG</a>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="advantages" id="advantages">
@@ -195,70 +185,70 @@
           </ul>
         </div>
       </section>
-<div class="contacts-wrapper">
+      <div class="contacts-wrapper">
 
 
-      <section class="feedback feedback--left">
-        <div class="feedback__wrapper">
-          <div class="feedback__img-container">
+        <section class="feedback feedback--left">
+          <div class="feedback__wrapper">
+            <div class="feedback__img-container">
+            </div>
+            <div class="feedback__container">
+              <h2>Остались вопросы? Задайте их нам!</h2>
+              <p>Мы проконсультируем Вас бесплатно</p>
+              <form class="form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST" id="feedback-form">
+
+                <input type="text" name="name" id="form-name" placeholder="Имя" required="">
+                <label for="form-name">Введите имя</label>
+
+
+                <input type="tel" name="tel" id="form-tel" placeholder="Телефон" required="">
+                <label for="form-tel">Введите номер телефона</label>
+
+
+                <textarea name="text" rows="4" id="form-message" placeholder="Ваш вопрос" required=""></textarea>
+                <label for="form-message">Введите ваш вопрос</label>
+
+                <button type="submit">Задать вопрос</button>
+
+                <input type="checkbox" name="agree" id="form-agree" required="">
+                <label for="form-agree">Я согласен на обработку персональных данных</label>
+
+              </form>
+            </div>
           </div>
-          <div class="feedback__container">
-            <h2>Остались вопросы? Задайте их нам!</h2>
-            <p>Мы проконсультируем Вас бесплатно</p>
-            <form class="form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST" id="feedback-form">
+        </section>
 
-              <input type="text" name="name" id="form-name" placeholder="Имя" required="">
-              <label for="form-name">Введите имя</label>
+        <section class="feedback">
+          <div class="feedback__wrapper">
+            <div class="feedback__img-container">
+            </div>
+            <div class="feedback__container">
+              <h2>Остались вопросы? Задайте их нам!</h2>
+              <p>Мы проконсультируем Вас бесплатно</p>
+              <form class="form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST" id="feedback-form">
+
+                <input type="text" name="name" id="form-name" placeholder="Имя" required="">
+                <label for="form-name">Введите имя</label>
 
 
-              <input type="tel" name="tel" id="form-tel" placeholder="Телефон" required="">
-              <label for="form-tel">Введите номер телефона</label>
+                <input type="tel" name="tel" id="form-tel" placeholder="Телефон" required="">
+                <label for="form-tel">Введите номер телефона</label>
 
 
-              <textarea name="text" rows="4" id="form-message" placeholder="Ваш вопрос" required=""></textarea>
-              <label for="form-message">Введите ваш вопрос</label>
+                <textarea name="text" rows="4" id="form-message" placeholder="Ваш вопрос" required=""></textarea>
+                <label for="form-message">Введите ваш вопрос</label>
 
-              <button type="submit">Задать вопрос</button>
+                <button type="submit">Задать вопрос</button>
 
-              <input type="checkbox" name="agree" id="form-agree" required="">
-              <label for="form-agree">Я согласен на обработку персональных данных</label>
+                <input type="checkbox" name="agree" id="form-agree" required="">
+                <label for="form-agree">Я согласен на обработку персональных данных</label>
 
-            </form>
+              </form>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="feedback">
-        <div class="feedback__wrapper">
-          <div class="feedback__img-container">
-          </div>
-          <div class="feedback__container">
-            <h2>Остались вопросы? Задайте их нам!</h2>
-            <p>Мы проконсультируем Вас бесплатно</p>
-            <form class="form" action="http://jkorpela.fi/cgi-bin/echo.cgi" method="POST" id="feedback-form">
-
-              <input type="text" name="name" id="form-name" placeholder="Имя" required="">
-              <label for="form-name">Введите имя</label>
-
-
-              <input type="tel" name="tel" id="form-tel" placeholder="Телефон" required="">
-              <label for="form-tel">Введите номер телефона</label>
-
-
-              <textarea name="text" rows="4" id="form-message" placeholder="Ваш вопрос" required=""></textarea>
-              <label for="form-message">Введите ваш вопрос</label>
-
-              <button type="submit">Задать вопрос</button>
-
-              <input type="checkbox" name="agree" id="form-agree" required="">
-              <label for="form-agree">Я согласен на обработку персональных данных</label>
-
-            </form>
-          </div>
-        </div>
-      </section>
-
-</div>
+      </div>
     </main>
   </div>
   <footer class="page-footer">
