@@ -4,9 +4,8 @@
   padding: 0 50px;
   width: 100%;
 
-
   @media (max-width: $tablet-width) {
-    padding: 0 25px;
+    padding: 0 45px;
     margin-bottom: 55px;
   }
 
@@ -17,111 +16,53 @@
 }
 
 .page-header__wrapper {
-  max-width: 1410px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+  margin-bottom: 170px;
+  max-width: 1160px;
   margin: 0 auto;
 }
 
-.page-header__nav-wrapper {
-  display: flex;
-  align-items: center;
-  margin-top: 33px;
-  margin-bottom: 170px;
-}
-
 .page-header__logo {
+  width: 89px;
+  height: 20px;
+
+  @media (max-width: $tablet-width) {
+    width: 82px;
+    height: 17px;
+  }
+
   @media (max-width: $mobile-width) {
-    width: 38px;
-    height: 38px;
-  }
-}
-
-.page-header__logo-link {
-  align-self: flex-start;
-}
-
-.page-header__nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-grow: 1;
-  flex-wrap: wrap;
-}
-
-.page-header__nav-item {
-  display: flex;
-  justify-content: flex-end;
-  align-self: center;
-
-  white-space: nowrap;
-  margin-left: 60px;
-
-  @media (max-width: $tablet-width) {
-    flex-grow: 0;
-    margin-left: 20px;
-
-    &:hover,
-    &:focus {
-      cursor: pointer;
-
-      & svg {
-        fill: $white;
-      }
-    }
-  }
-}
-
-.page-header__nav-item-text {
-  margin-left: 10px;
-
-  &:hover,
-  &:focus {
-    color: $text-footer;
-    text-decoration: underline;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
-
-  @media (max-width: $tablet-width) {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-  }
-}
-
-.page-header__callback {
-  margin-left: 20px;
-
-  @media (max-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.page-header__pic {
-  display: inline-block;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  fill: #00b2ff;
-
-  @media (max-width: $tablet-width) {
-    width: 24px;
-    height: 24px;
+    width: 68px;
+    height: 15px;
   }
 }
 
 .page-header__link {
-  position: relative;
   text-decoration: none;
+  font-family: $bebas-bold;
+  font-size: 26px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
   color: inherit;
-  padding: 10px;
   transition: all 0.2s ease;
   z-index: 1;
+
+  &:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
