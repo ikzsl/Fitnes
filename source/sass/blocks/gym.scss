@@ -1,0 +1,163 @@
+.gym {
+  padding-bottom: 110px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: $tablet-width) {
+    // padding: 0 25px;
+    padding-bottom: 85px;
+  }
+
+  @media (max-width: $mobile-width) {
+    // padding: 0 20px;
+    padding-bottom: 65px;
+  }
+}
+
+.gym__wrapper {
+  position: relative;
+  display: flex;
+  max-width: 1160px;
+  margin: 0 auto;
+  justify-content: stretch;
+
+
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+.gym__description-wrapper {
+  min-height: 310px;
+  padding: 90px 80px 0 50px;
+
+  @media (max-width: $tablet-width) {
+    min-width: auto;
+    padding: 0;
+    min-height: auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0 15px;
+    min-height: auto;
+    text-align: left;
+    margin-bottom: 30px;
+  }
+}
+
+.gym__description-wrapper h2 {
+  margin: 0;
+  font-family: $bebas-bold;
+  font-weight: normal;
+  color: $blue-dark;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+
+  font-size: 49px;
+  line-height: 49px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 10px;
+    font-size: 42px;
+    line-height: 42px;
+
+  }
+
+  @media (max-width: $mobile-width) {
+
+    margin-bottom: 0;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.gym__description-wrapper h3 {
+  margin: 0;
+  margin-bottom: 35px;
+  font-family: $roboto;
+  font-weight: normal;
+  color: $blue-dark;
+
+  font-size: 18px;
+  line-height: 27px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 25px;
+
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+
+  }
+}
+
+.gym__description-wrapper p {
+  min-width: 355px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $roboto-light;
+  font-size: 16px;
+  line-height: 24px;
+  color: $blue-dark;
+
+  @media (max-width: $tablet-width) {
+    min-width: auto;
+    max-width: 502px;
+    display: none;
+
+    &:first-of-type {
+      display: block;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+  }
+}
+
+.gym__image {
+  width: 660px;
+  height: 400px;
+
+  @media (max-width: $tablet-width) {
+    width: 678px;
+    height: 345px;
+    overflow: hidden;
+  }
+
+  @media (max-width: $mobile-width) {
+    height: 313px;
+    overflow: hidden;
+  }
+}
+
+.gym__video-thumb {
+  position: relative;
+  display: block;
+  margin-left: 40%;
+  margin-top: -80px;
+  width: 364px;
+  height: 228px;
+  z-index: 2;
+  background-image: url("../img/gym-video.png" );
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 auto;
+    margin-top: -85px;
+    width: 266px;
+    height: 167px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-top: 40px;
+    width: 100%;
+    // height: ;
+  }
+}
