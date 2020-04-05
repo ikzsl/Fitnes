@@ -755,7 +755,7 @@ body {
 .gym__video-thumb {
   position: relative;
   display: block;
-  margin-left: 40%;
+  margin-left: calc(50% - 140px);
   margin-top: -80px;
   width: 364px;
   height: 228px;
