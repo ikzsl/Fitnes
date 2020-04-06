@@ -1,0 +1,249 @@
+.subscription {
+  background-color: $bg-gray;
+  padding: 120px 100px;
+  padding-bottom: 130px;
+
+
+  @media (max-width: $tablet-width) {
+    padding: 100px 160px;
+    padding-bottom: 80px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 70px 15px;
+    padding-bottom: 65px;
+  }
+}
+
+.subscription__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.subscription__headline {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 45px;
+  font-family: $bebas-bold;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: $blue-dark;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.subscriptions__toggler {
+  list-style: none;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 340px;
+
+  border-bottom: 2px solid $border-gray;
+
+  @media (max-width: $tablet-width) {
+    width: 332px;
+    margin-bottom: 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 290px;
+    margin-bottom: 35px;
+  }
+}
+
+.subscriptions__toggler-item {
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 20px;
+  bottom: -2px;
+  border-bottom: 2px solid transparent;
+
+  font-size: 20px;
+  line-height: 30px;
+  color: #8893aa;
+
+  &:hover,
+  &:focus {
+    border-bottom: 2px solid red;
+    color: $blue-dark;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.subscription__list {
+  max-width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (max-width: $tablet-width) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (max-width: $mobile-width) {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.subscription__item {
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+  padding-top: 60px;
+  width: 30%;
+  min-height: 448px;
+  overflow: hidden;
+  background-color: $white;
+  border: 5px solid transparent;
+
+
+  &:hover,
+  &:focus {
+    border-image: linear-gradient(112deg, $red 17%, $blue-light 96%) 10;
+    color: $blue-dark;
+  }
+
+  @media (max-width: $tablet-width) {
+    flex-grow: 0;
+    width: 100%;
+    height: 256px;
+  }
+
+  @media (max-width: $mobile-width) {
+    // height: 256px;
+  }
+}
+
+.subscription__item h3 {
+  font-family: $roboto-bold;
+  font-size: 26px;
+  line-height: 40px;
+  color: $blue-dark;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+
+  @media (max-width: $tablet-width) {
+    font-size: 26px;
+    line-height: 29px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.subscription__item h4 {
+  font-family: $roboto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $blue-gray;
+  margin: 0;
+  margin-bottom: 60px;
+
+  @media (max-width: $tablet-width) {}
+
+  @media (max-width: $mobile-width) {}
+}
+
+
+
+.subscription p {
+  position: relative;
+  margin: 0;
+  max-width: 170px;
+
+  margin-bottom: 50px;
+
+  font-family: $roboto-bold;
+  font-size: 60px;
+  line-height: 90px;
+  color: $blue;
+  z-index: 1;
+
+  &::before {
+    content: attr(data-value);
+    position: absolute;
+    font-size: 100px;
+    line-height: 150px;
+    color: #e8e8e8;
+    left: -20px;
+    bottom: -15px;
+    z-index: -1;
+  }
+
+  // &::after {
+  //   position: absolute;
+  //   content: "";
+  //   width: 30px;
+  //   height: 42px;
+  //   top: 24px;
+  //   right: -40px;
+  //   background-image: url("../img/rouble.svg");
+  // }
+
+
+
+  @media (max-width: $mobile-width) {
+    margin: 25px 35px;
+    font-size: 48px;
+    line-height: 72px;
+
+    &::before {
+      font-size: 80px;
+      line-height: 120px;
+      left: -15px;
+      bottom: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 24px;
+      height: 33px;
+      top: 20px;
+      right: -35px;
+      background-image: url("../img/rouble.svg");
+      background-size: contain;
+    }
+  }
+}
+
+.subscription span {
+  color: $blue-dark;
+  font-family: bebas;
+}
