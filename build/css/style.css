@@ -855,6 +855,7 @@ body {
       line-height: 24px; } }
 
 .subscription__list {
+  position: relative;
   max-width: 1160px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -866,7 +867,20 @@ body {
       flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  z-index: 0; }
+  .subscription__list::after {
+    position: absolute;
+    content: "";
+    width: 290px;
+    height: 350px;
+    bottom: -190px;
+    right: -170px;
+    background-image: url("../../img/weight@1x.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1; }
   @media (max-width: 1199px) {
     .subscription__list {
       -webkit-box-orient: vertical;
@@ -875,7 +889,10 @@ body {
               flex-direction: column;
       -webkit-box-align: center;
           -ms-flex-align: center;
-              align-items: center; } }
+              align-items: center; }
+      .subscription__list::after {
+        bottom: -190px;
+        right: -180px; } }
   @media (max-width: 767px) {
     .subscription__list {
       -webkit-box-align: center;
@@ -884,7 +901,9 @@ body {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
-              flex-direction: column; } }
+              flex-direction: column; }
+      .subscription__list::after {
+        display: none; } }
 
 .subscription__item {
   display: -webkit-box;
@@ -900,13 +919,12 @@ body {
   position: relative;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  margin-bottom: 30px;
   padding-top: 60px;
   width: 30%;
   min-height: 448px;
-  overflow: hidden;
-  background-color: #ffffff;
-  border: 5px solid transparent; }
+  border: 5px solid transparent;
+  background-color: #f8f9fc;
+  z-index: 10; }
   .subscription__item:hover, .subscription__item:focus {
     -o-border-image: linear-gradient(112deg, #ed0233 17%, #003eb7 96%) 10;
        border-image: linear-gradient(112deg, #ed0233 17%, #003eb7 96%) 10;
