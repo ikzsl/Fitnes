@@ -88,4 +88,28 @@
       opacity: 0.7;
     }
   }
+
+  &--promo-action {
+    color: #ffffff;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    padding: 25px 50px;
+    transition: background-color 0.2s ease;
+
+    &:hover,
+    &:focus {
+      background-color: #ffffff;
+      color: $blue-dark;
+    }
+
+    &:active {
+      opacity: 0.7;
+    }
+
+    @media (max-width: $tablet-width) {
+      padding: 14px 15px;
+    }
+  }
+
+
 }
