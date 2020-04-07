@@ -3,9 +3,6 @@
   padding: 120px 100px;
   padding-bottom: 130px;
 
-
-
-
   @media (max-width: $tablet-width) {
     padding: 100px 160px;
     padding-bottom: 80px;
@@ -20,8 +17,6 @@
 .subscription__wrapper {
   max-width: 1160px;
   margin: 0 auto;
-
-
 }
 
 .subscription__headline {
@@ -139,7 +134,7 @@
     flex-direction: column;
 
     &::after {
-    display: none;
+      display: none;
     }
   }
 }
@@ -203,13 +198,7 @@
   color: $blue-gray;
   margin: 0;
   margin-bottom: 60px;
-
-  @media (max-width: $tablet-width) {}
-
-  @media (max-width: $mobile-width) {}
 }
-
-
 
 .subscription p {
   position: relative;
@@ -234,18 +223,6 @@
     bottom: -15px;
     z-index: -1;
   }
-
-  // &::after {
-  //   position: absolute;
-  //   content: "";
-  //   width: 30px;
-  //   height: 42px;
-  //   top: 24px;
-  //   right: -40px;
-  //   background-image: url("../img/rouble.svg");
-  // }
-
-
 
   @media (max-width: $mobile-width) {
     margin: 25px 35px;
@@ -274,5 +251,5 @@
 
 .subscription span {
   color: $blue-dark;
-  font-family: roboto;
+  font-family: $roboto;
 }

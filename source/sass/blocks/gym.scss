@@ -105,9 +105,6 @@
       display: block;
     }
   }
-
-  @media (max-width: $mobile-width) {
-  }
 }
 
 .gym__image {
@@ -134,7 +131,7 @@
   width: 364px;
   height: 228px;
   z-index: 2;
-  background-image: url("../img/gym-video.png" );
+  background-image: url("../img/gym-video.png");
   background-size: cover;
   background-position: center;
 

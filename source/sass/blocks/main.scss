@@ -1,6 +1,5 @@
 .main {
-  background-color: $red;
-  background: linear-gradient(45deg, #003D85, #B80027 70%);
+  background: linear-gradient(45deg, #003d85, #b80027 70%);
   min-height: 658px;
   color: $white;
   padding: 0 50px;
@@ -66,7 +65,7 @@
     background-size: cover;
 
     @media only screen and (min-resolution: 192dpi),
-    only screen and (min-resolution: 2dppx) {
+      only screen and (min-resolution: 2dppx) {
       background-image: url("../img/superman@2x.png");
     }
   }
@@ -133,7 +132,6 @@
     font-size: 28px;
     line-height: 28px;
   }
-
 }
 
 .main__headline {
@@ -193,16 +191,10 @@
 }
 
 .main__action {
-
-  @media (max-width: $tablet-width) {
-  }
-
   @media (max-width: $mobile-width) {
     width: 100%;
   }
 }
-
-
 
 .main__main-image {
   margin-right: -70px;

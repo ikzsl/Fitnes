@@ -365,7 +365,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 30px;
-  margin-bottom: 170px;
   max-width: 1160px;
   margin: 0 auto; }
 
@@ -410,8 +409,7 @@ body {
           flex: 1 0 auto; }
 
 .main {
-  background-color: #ed0233;
-  background: linear-gradient(45deg, #003D85, #B80027 70%);
+  background: linear-gradient(45deg, #003d85, #b80027 70%);
   min-height: 658px;
   color: #ffffff;
   padding: 0 50px;
@@ -1004,7 +1002,7 @@ body {
 
 .subscription span {
   color: #102654;
-  font-family: roboto; }
+  font-family: "RobotoCondensed", "Arial", sans-serif; }
 
 .promo {
   max-width: 1160px;
@@ -1067,7 +1065,8 @@ body {
 .promo__date-info {
   color: #ffffff;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  margin-top: -5px; }
 
 .promo__date,
 .promo__time {
@@ -1090,22 +1089,24 @@ body {
 .promo__date-desc {
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 37px;
+  line-height: 30px;
   border-bottom: 1px solid white; }
   @media (max-width: 1199px) {
     .promo__date-desc {
       font-size: 12px;
-      line-height: 18px; } }
+      line-height: 15px; } }
 
 .promo__data {
   position: relative;
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 40px;
-  line-height: 50px; }
+  line-height: 45px;
+  margin-bottom: 10px; }
   @media (max-width: 1199px) {
     .promo__data {
       font-size: 24px;
-      line-height: 26px; } }
+      line-height: 24px;
+      margin-bottom: 4px; } }
 
 .promo__data-desc {
   position: absolute;
@@ -1188,7 +1189,7 @@ body {
       width: 100%; } }
 
 .table__desc {
-  font-family: roboto;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
   font-style: normal;
   font-size: 18px;
   line-height: 27px;
@@ -1690,7 +1691,9 @@ body {
       opacity: 0.7; }
     @media (max-width: 1199px) {
       .button--promo-action {
-        padding: 14px 15px; } }
+        padding: 14px 15px;
+        font-size: 10px;
+        line-height: 12px; } }
 
 .form {
   display: -webkit-box;
@@ -1870,7 +1873,7 @@ body {
   padding-bottom: 115px;
   color: #ffffff; }
   .feedback--left {
-    background-color: #fff;
+    background-color: #ffffff;
     color: #102654; }
   @media (max-width: 1199px) {
     .feedback {

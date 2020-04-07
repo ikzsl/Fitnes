@@ -1,9 +1,7 @@
 .contacts-wrapper {
   display: flex;
 
-
   @media (max-width: $tablet-width) {
     flex-direction: column;
   }
-
 }

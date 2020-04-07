@@ -14,7 +14,6 @@
     padding: 0 15px;
     padding-bottom: 65px;
   }
-
 }
 
 .promo__wrapper {
@@ -64,6 +63,7 @@
   margin: 0;
   padding: 0;
   // width: 100px;
+  margin-top: -5px;
 }
 
 
@@ -72,7 +72,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-
 }
 
 .promo__date {
@@ -94,27 +93,26 @@
 .promo__date-desc {
   font-family: $roboto;
   font-size: 18px;
-  line-height: 37px;
+  line-height: 30px;
   border-bottom: 1px solid white;
 
   @media (max-width: $tablet-width) {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 15px;
   }
-
-
-
 }
 
 .promo__data {
   position: relative;
   font-family: $roboto-bold;
   font-size: 40px;
-  line-height: 50px;
+  line-height: 45px;
+  margin-bottom: 10px;
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
-    line-height: 26px;
+    line-height: 24px;
+    margin-bottom: 4px;
   }
 }
 
@@ -131,7 +129,7 @@
     line-height: 12px;
 
     top: 2px;
-  left: 15px;
+    left: 15px;
   }
 }
 
@@ -182,7 +180,6 @@
     width: 100%;
     justify-content: center;
   }
-
 }
 
 .promo__image {
