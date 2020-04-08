@@ -150,7 +150,7 @@
   width: 30%;
   min-height: 448px;
   border: 5px solid transparent;
-  background-color: $bg-gray;
+  background-color: $white;
   z-index: 10;
 
   &:hover,
@@ -163,10 +163,12 @@
     flex-grow: 0;
     width: 100%;
     height: 256px;
+    margin-bottom: 40px;
   }
 
   @media (max-width: $mobile-width) {
     // height: 256px;
+    margin-bottom: 35px;
   }
 }
 

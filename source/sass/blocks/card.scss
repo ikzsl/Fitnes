@@ -1,0 +1,39 @@
+.card {
+  padding-top: 50px;
+}
+
+.card h3 {
+  margin: 0;
+  padding: 0;
+
+  font-family: $roboto-bold;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.card h4 {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #b6bdcc;
+}
+
+.card ul {
+  display: block;
+  width: 160px;
+  margin: 0 auto;
+  list-style: disc;
+  text-align: left;
+}
+
+.card li {
+  margin-bottom: 10px;
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}

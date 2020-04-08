@@ -1,0 +1,87 @@
+.trainers {
+  position: relative;
+  // border: 2px solid red;
+  max-width: 1160px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    margin: 0 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 15px;
+  }
+}
+
+.trainers__headline {
+  font-family: $bebas-bold;
+  font-size: 49px;
+  line-height: 49px;
+  font-weight: normal;
+  letter-spacing: 0.03em;
+  color: $blue-dark;
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.trainers__container {
+  @media (max-width: $tablet-width) {
+    margin: 0 45px;
+  }
+}
+
+.trainers__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.trainers__list-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+
+  &:hover .trainers__info {
+    opacity: 1;
+  }
+}
+
+.trainers__list-item img {
+  display: block;
+
+  background-color: gray;
+
+  width: 260px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    margin: 0;
+    width: 268px;
+  }
+}
+
+.trainers__info {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  background: rgba(16, 38, 84, 0.89);
+  width: 260px;
+  color: white;
+  transition: 0.3s ease;
+
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    width: 268px;
+  }
+}
