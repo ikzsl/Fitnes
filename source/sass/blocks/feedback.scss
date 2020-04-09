@@ -5,8 +5,8 @@
   color: $white;
 
   &--left {
-    background-color: $white;
-    color: $blue-dark;
+    background-color: $blue-dark;
+    color: $white;
   }
 
   @media (max-width: $tablet-width) {

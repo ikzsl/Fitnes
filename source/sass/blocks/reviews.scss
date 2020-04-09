@@ -1,0 +1,121 @@
+.reviews {
+  // border: 2px solid red;
+  width: 640px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    // margin: 0 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    // margin: 0 15px;
+    width: 266px;
+  }
+}
+
+.reviews__headline {
+  margin: 0;
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+
+  font-family: $bebas-bold;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+
+  color: $blue-dark;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 50px;
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 50px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+}
+
+.reviews__wrapper {
+  position: relative;
+}
+
+.reviews__slider {
+  overflow: hidden;
+}
+
+.reviews__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reviews__list-item {
+  max-width: 560px;
+  min-height: 242px;
+  list-style: none;
+  // padding-left: 60px;
+  background-color: $blue-deep;
+  margin-right: 80px;
+
+  @media (max-width: $tablet-width) {
+    margin-right: 80px;
+    // margin: 0 45px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 226px;
+    margin-right: 38px;
+    min-height: 335px;
+  }
+}
+
+.reviews__list-item img {
+  margin-left: 60px;
+  margin-top: 60px;
+  margin-right: 25px;
+  float: left;
+
+  @media (max-width: $mobile-width) {
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+}
+
+.reviews__list-item h3 {
+  margin-top: 60px;
+  // display: inline;
+  color: $white;
+  font-family: $roboto-bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.reviews__list-item p {
+  padding-left: 170px;
+  width: 330px;
+  color: $white;
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 22px;
+
+  @media (max-width: $mobile-width) {
+    padding: 25px;
+    padding-top: 0;
+    width: auto;
+    text-align: center;
+  }
+}
+
+.button-prev2 {
+  margin-left: -30px;
+  left: 30px;
+}
+
+.button-next2 {
+  margin-right: -30px;
+  left: 30px;
+}

@@ -1,5 +1,5 @@
 .trainers {
-  position: relative;
+  // position: relative;
   // border: 2px solid red;
   max-width: 1160px;
   margin: 0 auto;
@@ -11,6 +11,10 @@
   @media (max-width: $mobile-width) {
     margin: 0 15px;
   }
+}
+
+.trainers__slider {
+  position: relative;
 }
 
 .trainers__headline {
@@ -34,6 +38,7 @@
 }
 
 .trainers__container {
+  // position: relative;
   @media (max-width: $tablet-width) {
     margin: 0 45px;
   }
