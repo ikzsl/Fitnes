@@ -1,16 +1,13 @@
-.feedback {
+.contacts {
   background-color: $bg-blue;
-  padding: 100px 150px;
+  // padding: 100px 150px;
   padding-bottom: 115px;
   color: $white;
-
-  &--left {
-    background-color: $blue-dark;
-    color: $white;
-  }
+  width: 50%;
 
   @media (max-width: $tablet-width) {
     padding: 53px 25px;
+    width: 100%;
   }
 
   @media (max-width: $mobile-width) {
@@ -18,7 +15,7 @@
   }
 }
 
-.feedback__wrapper {
+.contacts__wrapper {
   max-width: 1170px;
   margin: 0 auto;
   display: flex;
@@ -29,50 +26,12 @@
   }
 }
 
-.feedback__container {
+.contacts__container {
   display: flex;
   flex-direction: column;
   position: relative;
   width: 570px;
 
-  &::after {
-    position: absolute;
-    content: "";
-    left: -550px;
-    top: 80px;
-    width: 100%;
-    height: 250px;
-    // background-image: url("../img/airplane@1x.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 0;
-
-    @media only screen and (min-resolution: 192dpi),
-      only screen and (min-resolution: 2dppx) {
-      // background-image: url("../img/airplane@2x.png");
-    }
-
-    @media (max-width: $tablet-width) {
-      display: none;
-    }
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    left: -750px;
-    top: -150px;
-    width: 620px;
-    height: 600px;
-    // background-image: url("../img/dots.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: 0;
-
-    @media (max-width: $tablet-width) {
-      display: none;
-    }
-  }
 
   @media (max-width: $tablet-width) {
     width: 590px;
@@ -83,7 +42,7 @@
   }
 }
 
-.feedback__container h2 {
+.contacts__container h2 {
   margin: 0;
   font-size: 36px;
   line-height: 51px;
@@ -104,14 +63,14 @@
   }
 }
 
-.feedback__container p {
+.contacts__container p {
   margin: 0;
   margin-bottom: 50px;
   font-size: 16px;
   line-height: 22px;
 }
 
-.feedback__img-container {
+.contacts__img-container {
   width: 50%;
   height: 200px;
   margin-left: -100px;

@@ -1,0 +1,37 @@
+.free-session {
+  background-color: $blue-dark;
+  padding: 60px 170px 60px 100px;
+  color: $white;
+  width: 50%;
+
+
+  @media (max-width: $tablet-width) {
+    padding: 70px 160px 70px 130px;
+    width: 100%;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 70px 15px;
+  }
+}
+
+.free-session__headline {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $bebas-bold;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white;
+
+  @media (max-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
+}

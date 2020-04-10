@@ -7,15 +7,13 @@
 
 .form input {
   width: 270px;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0);
   border: none;
-  padding: 15px;
-  margin-bottom: 40px;
+  padding: 10px;
+  padding-left: 0;
+  margin-bottom: 30px;
   color: $white;
-
-  @media (max-width: $tablet-width) {
-    min-width: 280px;
-  }
+  border-bottom: 1px solid #74819c;
 
   @media (max-width: $mobile-width) {
     margin-bottom: 30px;
@@ -59,51 +57,29 @@
   margin-bottom: 30px;
 }
 
-.form textarea {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: none;
-  padding: 15px;
-  margin-bottom: 40px;
-  resize: none;
-  color: $white;
-  width: 100%;
-  height: 154px;
-
-  &::-webkit-input-placeholder {
-    color: $white;
-    opacity: 1;
-  }
-
-  &::-moz-placeholder {
-    color: $white;
-    opacity: 1;
-  }
-}
 
 .form button[type="submit"] {
   padding: 14px 25px;
-  border-radius: 5px;
+  width: 100%;
   background-color: transparent;
+  border: 3px solid #ffffff;
+
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
-  font-family: $roboto;
-  font-weight: bold;
-  margin-bottom: 30px;
-  width: 47%;
-
-  cursor: pointer;
-  border: 1px solid #ffffff;
+  font-family: $roboto-bold;
   color: $white;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.05em;
+
   transition: all 0.2s ease;
+  cursor: pointer;
 
   &:hover,
   &:focus {
     background-color: $white;
-    color: $bg-blue;
+    color: $blue-dark;
   }
 
   &:active {
@@ -111,61 +87,6 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 30px;
     width: 100%;
-  }
-}
-
-.form input[type="checkbox"] {
-  @include visually-hidden;
-}
-
-.form input[type="checkbox"] ~ label {
-  display: block;
-  position: relative;
-  font-size: 14px;
-  line-height: 16px;
-  padding-left: 30px;
-  margin-top: 10px;
-  color: rgba(255, 255, 255, 0.8);
-  cursor: pointer;
-  width: 47%;
-
-  @media (max-width: $mobile-width) {
-    width: 100%;
-  }
-
-  &::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 16px;
-    height: 16px;
-    border: 1px solid $white;
-  }
-
-  &:hover::before,
-  &:hover::before {
-    box-shadow: 0 0 2px 2px $white;
-  }
-}
-
-.form input[type="checkbox"]:focus ~ label::before {
-  box-shadow: 0 0 2px 2px $white;
-}
-
-.form input[type="checkbox"]:checked ~ label {
-  &::after {
-    border: 1px solid $white;
-    position: absolute;
-    content: "";
-    top: 4px;
-    left: 5px;
-    width: 5px;
-    height: 7px;
-    border-left: none;
-    border-top: none;
-    transform: rotate(45deg);
   }
 }
