@@ -1731,7 +1731,6 @@ body {
   opacity: 1; }
 
 .page-footer {
-  border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1820,7 +1819,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  padding: 0;
   margin: 0; }
   @media (max-width: 767px) {
     .links {
