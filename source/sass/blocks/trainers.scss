@@ -3,13 +3,16 @@
   // border: 2px solid red;
   max-width: 1160px;
   margin: 0 auto;
+  margin-bottom: 240px;
 
   @media (max-width: $tablet-width) {
     margin: 0 45px;
+    margin-bottom: 200px;
   }
 
   @media (max-width: $mobile-width) {
     margin: 0 15px;
+    margin-bottom: 140px;
   }
 }
 

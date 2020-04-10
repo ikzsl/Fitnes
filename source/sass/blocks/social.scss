@@ -4,9 +4,12 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
-  // justify-content: center;
   min-width: 112px;
   flex-wrap: wrap;
+
+  @media (max-width: $mobile-width) {
+    min-width: 150px;
+  }
 }
 
 .social__link {
@@ -25,8 +28,4 @@
   &:active svg {
     opacity: 1;
   }
-}
-
-.social__item {
-  padding: 0 15px;
 }

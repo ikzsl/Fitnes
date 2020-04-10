@@ -1,14 +1,14 @@
 .reviews {
-  // border: 2px solid red;
   width: 640px;
   margin: 0 auto;
+  margin-bottom: 120px;
 
   @media (max-width: $tablet-width) {
-    // margin: 0 45px;
+    margin-bottom: 100px;
   }
 
   @media (max-width: $mobile-width) {
-    // margin: 0 15px;
+    margin-bottom: 70px;
     width: 266px;
   }
 }

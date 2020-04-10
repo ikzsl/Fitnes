@@ -1,5 +1,4 @@
 .contacts {
-  border: 1px solid red;
   background-color: $white;
   padding: 70px 120px;
   padding-bottom: 0;
@@ -87,8 +86,8 @@
 
   @media (max-width: $mobile-width) {
     padding: 0;
-    width: 280px;
-    margin: 0 auto;
+    // width: 280px;
+    // margin: 0 auto;
   }
 }
 
