@@ -436,8 +436,8 @@ body {
   cursor: auto;
   pointer-events: none; }
 
-.swiper-button-prev:after,
-.swiper-button-next:after {
+.swiper-button-prev::after,
+.swiper-button-next::after {
   font-size: var(--swiper-navigation-size);
   letter-spacing: 0;
   text-transform: none;
@@ -1595,34 +1595,40 @@ body {
       line-height: 32px; } }
 
 .contacts {
-  background-color: #00b2ff;
-  padding-bottom: 115px;
-  color: #ffffff;
-  width: 50%; }
+  border: 1px solid red;
+  background-color: #ffffff;
+  padding: 70px 120px;
+  padding-bottom: 0;
+  color: #102654;
+  width: 50%;
+  border-top: 1px solid #74819c; }
   @media (max-width: 1199px) {
     .contacts {
-      padding: 53px 25px;
+      padding: 70px 133px;
       width: 100%; } }
   @media (max-width: 767px) {
     .contacts {
       padding: 53px 20px; } }
 
-.contacts__wrapper {
-  max-width: 1170px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end; }
+.contacts__headline {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: "BebasNeue-Bold", "Arial", sans-serif;
+  font-size: 49px;
+  line-height: 64px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #102654; }
   @media (max-width: 1199px) {
-    .contacts__wrapper {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center; } }
+    .contacts__headline {
+      font-size: 42px;
+      line-height: 42px; } }
+  @media (max-width: 767px) {
+    .contacts__headline {
+      font-size: 32px;
+      line-height: 32px; } }
 
-.contacts__container {
+.contacts__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1630,47 +1636,64 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
-  width: 570px; }
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-height: 130px;
+  list-style: none;
+  padding: 0; }
   @media (max-width: 1199px) {
-    .contacts__container {
-      width: 590px; } }
+    .contacts__list {
+      max-height: 150px; } }
   @media (max-width: 767px) {
-    .contacts__container {
-      width: auto; } }
+    .contacts__list {
+      max-height: none; } }
 
-.contacts__container h2 {
-  margin: 0;
-  font-size: 36px;
-  line-height: 51px;
-  font-weight: normal;
-  font-family: "RobotoCondensed", "Arial", sans-serif;
-  white-space: nowrap;
-  margin-bottom: 10px; }
-  @media (max-width: 1199px) {
-    .contacts__container h2 {
-      font-size: 32px;
-      line-height: 45px; } }
-  @media (max-width: 767px) {
-    .contacts__container h2 {
-      font-size: 28px;
-      line-height: 39px;
-      white-space: normal; } }
-
-.contacts__container p {
-  margin: 0;
-  margin-bottom: 50px;
+.contacts__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 60px;
+  padding: 0 60px;
+  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 22px; }
-
-.contacts__img-container {
-  width: 50%;
-  height: 200px;
-  margin-left: -100px;
-  margin-right: 100px; }
+  line-height: 24px; }
+  .contacts__list-item:nth-child(-n + 2) {
+    border-right: 1px solid #b8b8b8;
+    padding-left: 0; }
+    @media (max-width: 767px) {
+      .contacts__list-item:nth-child(-n + 2) {
+        border: none; } }
   @media (max-width: 1199px) {
-    .contacts__img-container {
-      display: none; } }
+    .contacts__list-item {
+      padding: 0 50px;
+      font-size: 20px;
+      line-height: 30px;
+      height: 70px; } }
+  @media (max-width: 767px) {
+    .contacts__list-item {
+      padding: 0;
+      width: 280px;
+      margin: 0 auto; } }
+
+.contacts__list-item a {
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  font-family: "RobotoCondensed", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px; }
+  @media (max-width: 1199px) {
+    .contacts__list-item a {
+      font-size: 18px;
+      line-height: 27px; } }
 
 .page-footer {
   -ms-flex-negative: 0;
