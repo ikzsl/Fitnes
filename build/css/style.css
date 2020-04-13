@@ -1680,7 +1680,7 @@ body {
               flex-direction: column; } }
 
 .actions__main {
-  background-color: red;
+  background-color: #ed0233;
   width: 49%;
   height: 462px;
   color: #ffffff;
