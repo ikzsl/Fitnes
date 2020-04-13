@@ -126,7 +126,7 @@
             <div class="promo__info-wrapper">
               <h2 class="promo__info-headline">Super games</h2>
 
-              <ul class="promo__date-info">
+              <div class="promo__date-info">
 
                 <ul class="promo__date">
                   <li class="promo__date-desc">
@@ -148,7 +148,7 @@
                 </ul>
 
 
-              </ul>
+              </div>
             </div>
 
 
@@ -160,7 +160,12 @@
             <a href="#" class="promo__action-button button button--promo-action">Заполнить заявку</a>
           </div>
           <div class="promo__image-container">
-            <img class="promo__image" src="./img/games@1x.png" alt="" srcset="">
+            <picture>
+              <source type="image/webp" srcset="img/games@1x.webp, img/games@2x.webp 2x">
+              <img src="img/games@1x.png" alt="Голый барабанщик" srcset="img/games@2x.png 2x"
+              class="promo__image">
+            </picture>
+            <!-- <img class="promo__image" src="./img/games@1x.png" alt="" srcset=""> -->
           </div>
 
         </div>
