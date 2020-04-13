@@ -1313,6 +1313,7 @@ body {
               justify-content: center; } }
 
 .promo__image {
+  display: block;
   height: 500px;
   width: 660px; }
   @media (max-width: 1199px) {
