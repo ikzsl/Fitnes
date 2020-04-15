@@ -517,6 +517,9 @@ body {
       width: 68px;
       height: 15px; } }
 
+.page-header__logo-link {
+  cursor: pointer; }
+
 .page-header__link {
   text-decoration: none;
   font-family: "BebasNeue-Bold", "Arial", sans-serif;
@@ -809,7 +812,8 @@ body {
 
 .gym__description-wrapper {
   min-height: 310px;
-  padding: 90px 80px 0 50px; }
+  padding: 90px 80px 0 50px;
+  max-width: 500px; }
   @media (max-width: 1199px) {
     .gym__description-wrapper {
       min-width: auto;
@@ -2169,9 +2173,11 @@ body {
       height: 15px;
       text-align: left; } }
 
-@media (max-width: 1199px) {
-  .page-footer__logo-link {
-    margin-bottom: 0; } }
+.page-footer__logo-link {
+  cursor: pointer; }
+  @media (max-width: 1199px) {
+    .page-footer__logo-link {
+      margin-bottom: 0; } }
 
 .page-footer__headline {
   margin: 0;
