@@ -51,6 +51,7 @@
   padding-right: 65px;
   padding-bottom: 65px;
   width: 40%;
+  height: 556px;
 
 
   &::after {
@@ -74,7 +75,7 @@
   @media (max-width: $tablet-width) {
 
     width: 50%;
-    min-height: auto;
+    height: 390px;
 
     padding-right: 10px;
     padding-bottom: 30px;
@@ -166,7 +167,7 @@
 
   bottom: 205px;
   right: 320px;
-  width: 113px;
+  width: 115px;
   padding: 0;
   margin: 0;
   text-align: right;
@@ -178,14 +179,14 @@
     line-height: 21px;
     margin-left: 120px;
 
-    bottom: 150px;
+    bottom: 145px;
     right: 220px;
   }
 
   @media (max-width: $mobile-width) {
 
     margin-left: 50px;
-    bottom: 120px;
+    bottom: 200px;
     right: 170px;
   }
 }
