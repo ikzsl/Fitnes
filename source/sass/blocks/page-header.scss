@@ -39,6 +39,10 @@
   }
 }
 
+.page-header__logo-link {
+  cursor: pointer;
+}
+
 .page-header__link {
   text-decoration: none;
   font-family: $bebas-bold;

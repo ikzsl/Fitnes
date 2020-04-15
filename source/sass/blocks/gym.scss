@@ -30,6 +30,7 @@
 .gym__description-wrapper {
   min-height: 310px;
   padding: 90px 80px 0 50px;
+  max-width: 500px;
 
   @media (max-width: $tablet-width) {
     min-width: auto;
