@@ -140,7 +140,7 @@ height: 152px;
 
 .advantages__svg {
   margin-right: 30px;
-  height: 100%;
+  height: 200px;
   float: left;
   display: block;
 
@@ -211,6 +211,15 @@ height: 152px;
     margin: 0 auto;
     width: 442px;
     padding: 20px 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto;
+    width: auto;
+    padding: 20px 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
