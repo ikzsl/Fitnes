@@ -53,11 +53,9 @@
     "node": "8.15"
   },
   "dependencies": {
-    "conic-gradient": "^1.0.0",
     "del": "^4.1.1",
     "imask": "^6.0.3",
     "node-normalize-scss": "^8.0.1",
-    "object-fit": "^0.4.3",
     "swiper": "^5.3.6"
   }
 }

@@ -77,7 +77,9 @@
 
 .actions__main-item-image {
   object-fit: cover;
-  object-position: bottom;
+  object-position: top;
+
+  font-family: 'object-fit: cover; object-position: top;';
 
   @media (max-width: $tablet-width) {
     object-fit: cover;

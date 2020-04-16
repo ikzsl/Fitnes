@@ -553,7 +553,7 @@ body {
   min-height: 658px;
   color: #ffffff;
   padding: 0 50px;
-  margin-bottom: 80px;
+  margin-bottom: 120px;
   padding-top: 50px;
   overflow: hidden; }
   @media (max-width: 1199px) {
@@ -806,7 +806,7 @@ body {
 
 .gym__description-wrapper {
   min-height: 310px;
-  padding: 90px 80px 0 50px;
+  padding: 50px 80px 0 50px;
   max-width: 500px; }
   @media (max-width: 1199px) {
     .gym__description-wrapper {
@@ -1384,7 +1384,8 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0; }
   .trainers__list-item:hover .trainers__info {
-    opacity: 1; }
+    opacity: 1;
+    position: relative; }
 
 .trainers__list-item img {
   display: block;
@@ -1560,6 +1561,7 @@ body {
   background: linear-gradient(-25deg, #0041ca 40%, #d10a42 75%);
   -webkit-background-clip: text;
           background-clip: text;
+  overflow: hidden;
   color: transparent; }
   @media (max-width: 767px) {
     .advantages__item h3 {
@@ -1709,8 +1711,9 @@ body {
 .actions__main-item-image {
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: bottom;
-     object-position: bottom; }
+  -o-object-position: top;
+     object-position: top;
+  font-family: 'object-fit: cover; object-position: top;'; }
   @media (max-width: 1199px) {
     .actions__main-item-image {
       -o-object-fit: cover;
