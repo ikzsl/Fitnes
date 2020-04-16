@@ -1536,8 +1536,9 @@ body {
         padding-top: 50px;
         padding-bottom: 0; } }
 
-.advantages__item h4 {
+.advantages__item h3 {
   margin: 0;
+  margin-top: 10px;
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 22px;
   line-height: 33px;
@@ -1550,34 +1551,23 @@ body {
   line-height: 22px;
   color: #102654; }
 
-.advantages__item h3 {
-  margin: 0;
-  float: left;
+.advantages__svg {
   margin-right: 30px;
   height: 100%;
-  font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
-  font-size: 71px;
-  line-height: 71px;
-  background: linear-gradient(-25deg, #0041ca 40%, #d10a42 75%);
-  -webkit-background-clip: text;
-          background-clip: text;
-  overflow: hidden;
-  color: transparent; }
+  float: left;
+  display: block; }
   @media (max-width: 767px) {
-    .advantages__item h3 {
+    .advantages__svg {
       float: none;
-      height: auto; } }
-
-.advantages__item-unit {
-  display: block;
-  font-family: "RobotoCondensed", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  color: #2e35ac; }
+      height: 90px;
+      width: 0;
+      margin: 0 auto; } }
 
 .advantages__item--center {
   padding: 0;
   position: absolute;
+  left: calc(50% - 120px);
+  top: calc(50% - 150px);
   width: 240px;
   color: #ffffff;
   text-align: center; }
@@ -1590,8 +1580,17 @@ body {
       background-color: #1c3374; } }
 
 .advantages__item--center h3 {
+  font-size: 74px;
+  line-height: 74px;
   margin: 0;
+  margin-bottom: 40px;
   color: #ffffff; }
+  @media (max-width: 1199px) {
+    .advantages__item--center h3 {
+      margin-bottom: 25px; } }
+  @media (max-width: 767px) {
+    .advantages__item--center h3 {
+      margin-bottom: 20px; } }
 
 .advantages__item--center p {
   color: #ffffff; }
@@ -2319,6 +2318,21 @@ body {
         font-size: 10px;
         line-height: 12px;
         border-width: 2px; } }
+
+.svg__big-text {
+  font-size: 71px;
+  text-anchor: middle; }
+  @media (max-width: 1199px) {
+    .svg__big-text {
+      font-size: 58px; } }
+
+.svg__small-text {
+  text-anchor: end; }
+  @media (max-width: 767px) {
+    .svg__small-text {
+      text-align: center;
+      text-anchor: middle;
+      margin-left: 10px; } }
 
 .form {
   display: -webkit-box;
