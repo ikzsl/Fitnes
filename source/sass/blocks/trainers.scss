@@ -5,7 +5,6 @@
   margin: 0 auto;
   margin-bottom: 240px;
 
-
   @media (max-width: $tablet-width) {
     margin: 0 45px;
     margin-bottom: 200px;
@@ -42,56 +41,29 @@
 }
 
 .trainers__container {
-  // position: relative;
+  display: flex;
+  justify-content: space-between;
+
   @media (max-width: $tablet-width) {
     margin: 0 45px;
+    max-width: 630px;
+  }
+
+
+  @media (max-width: $mobile-width) {
+    max-width: 226px;
+    
+    
   }
 }
 
 .trainers__list {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0; 
 }
 
 .trainers__list-item {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-shrink: 0;
+  margin-right: 50px; 
 
-  &:hover .trainers__info {
-    opacity: 1;
-    position: relative;
-  }
 }
 
-.trainers__list-item img {
-  display: block;
-
-  background-color: gray;
-
-  width: 260px;
-  margin: 0 auto;
-
-  @media (max-width: $tablet-width) {
-    margin: 0;
-    width: 268px;
-  }
-}
-
-.trainers__info {
-  opacity: 0;
-  position: absolute;
-  height: 100%;
-  background: rgba(16, 38, 84, 0.89);
-  width: 260px;
-  color: white;
-  transition: 0.3s ease;
-
-  text-align: center;
-
-  @media (max-width: $tablet-width) {
-    width: 268px;
-  }
-}

@@ -18,7 +18,11 @@ imask(document.getElementById('form-tel'), {
 var Swiper = window.Swiper;
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
-  centeredSlidesBounds: true,
+  slidesPerGroup: 1,
+  spaceBetween: 30,
+  slidesOffsetBefore: -40,
+  slidesOffsetAfter: 40,
+
   // centeredSlides: true,
   // spaceBetween: 30,
 
@@ -29,14 +33,18 @@ var swiper = new Swiper('.swiper-container', {
     // when window width is >= 768px
     768: {
       slidesPerView: 2,
-      spaceBetween: 2,
+      spaceBetween: 30,
       slidesPerGroup: 2,
+      slidesOffsetBefore: -30,
+  slidesOffsetAfter: 30,
     },
     // when window width is >= 1200px
     1200: {
       slidesPerView: 4,
-      spaceBetween: 30,
+      spaceBetween: 20,
       slidesPerGroup: 4,
+      slidesOffsetBefore: -30,
+      slidesOffsetAfter: 30,
     },
   },
 

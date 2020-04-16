@@ -1,39 +1,117 @@
 .card {
-  padding-top: 50px;
+  position: relative;
+  width: 260px;
+  min-height: 294px;
+  box-sizing: border-box;
+
+  font-size: 0;
+  display: block;
+  // border: 1px solid red;
+  padding: 0;
+  // margin: 0;
+
+  @media (max-width: $tablet-width) {
+    width: 268px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 226px;
+    
+  }
 }
 
 .card h3 {
-  margin: 0;
   padding: 0;
-
+  margin: 0;
   font-family: $roboto-bold;
   font-size: 18px;
   line-height: 27px;
+  z-index: 1;
+  opacity: 1;  
+
+  bottom: 20px;
+  position: absolute;
 }
 
 .card h4 {
-  margin: 0;
-  margin-bottom: 30px;
   padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+
   font-family: $roboto;
   font-size: 16px;
   line-height: 24px;
   font-weight: normal;
   color: #b6bdcc;
+  opacity: 0;
 }
 
 .card ul {
   display: block;
-  width: 160px;
-  margin: 0 auto;
   list-style: disc;
   text-align: left;
+  opacity: 0;
+
+  padding-left: 20px;
 }
 
 .card li {
-  margin-bottom: 10px;
   font-family: $roboto;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.card__info {
+  color: white;
+
+}
+
+.card img {
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+
+  @media (max-width: $mobile-width) {
+    width: 226px;  
+    height: 274px;
+  } 
+}
+
+.card__layer {
+  position: absolute;
+  top: 0;
+  padding: 45px;
+  width: 260px;
+  height: 294px;
+  transition: 0.3s ease;
+  text-align: center;
+
+  @media (max-width: $mobile-width) {
+    width: 226px;  
+    height: 274px;
+    padding: 15px;
+    
+  }  
+}
+
+.card:hover .card__layer {
+  opacity: 1;
+  background: rgba(16, 38, 84, 0.89);
+}
+
+.card:hover.card h3 {
+  opacity: 1;
+  position: static;
+  
+}
+
+.card:hover.card h4 {
+  opacity: 1;
+}
+
+.card:hover.card ul {
+  opacity: 1;
 }
