@@ -1,9 +1,0 @@
-<svg width="67" height="53" viewBox="0 0 67 53" fill="none" xmlns="http://www.w3.org/2000/svg">
- <text x="0" y="40" font-size="42" font-weight="bold" fill="url(#textgradient)" stroke="none">70</text>
- <defs>
-<linearGradient id="textgradient" x1="-2" y1="3" x2="29.023" y2="62.4222" gradientUnits="userSpaceOnUse">
-<stop stop-color="#D10A42"/>
-<stop offset="1" stop-color="#0041CA"/>
-</linearGradient>
-</defs>
-</svg>

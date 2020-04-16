@@ -11,8 +11,7 @@
     text-anchor: end;
   
     @media (max-width: $mobile-width) {
-      text-align: center;
       text-anchor: middle;
-      margin-left: 10px;
+      // margin-left: 10px;
     }
   }

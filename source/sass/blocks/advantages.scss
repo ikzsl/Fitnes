@@ -112,6 +112,15 @@
   }
 }
 
+
+.advantages__item  {
+height: 152px;
+
+@media (max-width: $tablet-width) {
+  height: 240px;
+}
+}
+
 .advantages__item h3 {
   margin: 0;
   margin-top: 10px;
@@ -138,7 +147,6 @@
   @media (max-width: $mobile-width) {
     float: none;
     height: 90px;
-    width: 0;
     margin: 0 auto;
   }
 }
@@ -202,7 +210,7 @@
     min-height: 239px;
     margin: 0 auto;
     width: 442px;
-    padding: 40px 130px;
+    padding: 20px 130px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
