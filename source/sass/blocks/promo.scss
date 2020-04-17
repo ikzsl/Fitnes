@@ -3,12 +3,14 @@
   max-width: 1160px;
   margin: 0 auto;
   // padding: 120px 100px;
+  margin-bottom: 100px;
 
 
   @media (max-width: $tablet-width) {
     padding: 60px 45px;
     padding-bottom: 80px;
     padding-top: 0;
+    margin-bottom: 0;
   }
 
   @media (max-width: $mobile-width) {
