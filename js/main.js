@@ -1,12 +1,10 @@
 'use strict';
 
-//-------objectFitImages
-
+// -------objectFitImages
 window.objectFitImages();
 
 
-//--------imask
-
+// --------imask
 var imask = window.IMask;
 
 imask(document.getElementById('form-tel'), {
