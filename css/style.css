@@ -1562,20 +1562,20 @@ body {
   line-height: 27px;
   border-bottom: 1px solid white; }
 
-.advantages__container {
+.advantages {
   background-color: #f8f9fc;
   width: 100%;
   padding: 120px 0;
   margin-bottom: 120px; }
   @media (max-width: 1199px) {
-    .advantages__container {
+    .advantages {
       padding: 100px 0 50px;
       margin-bottom: 100px; } }
   @media (max-width: 767px) {
-    .advantages__container {
+    .advantages {
       padding: 70px 0 50px; } }
 
-.advantages {
+.advantages__container {
   max-width: 1160px;
   margin: 0 auto; }
 
