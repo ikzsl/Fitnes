@@ -46,14 +46,14 @@ gulp.task("server", function () {
     server: "build/",
     notify: false,
     open: false,
-    cors: true,
+    cors: false,
     ui: false
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/icon-*.svg", gulp.series("sprite", "html", "refresh"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
-  gulp.watch("source/js/*.js", gulp.series("refresh"));
+  gulp.watch("source/js/*.js", gulp.series("copy", "refresh"));
 });
 
 gulp.task("refresh", function (done) {

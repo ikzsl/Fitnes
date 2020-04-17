@@ -1,18 +1,22 @@
-.advantages {
-  // border: 1px solid red;
-  max-width: 1160px;
-  margin: 0 auto;
+.advantages__container {
+  background-color: $bg-gray;
+  width: 100%;
+  padding: 120px 0;
   margin-bottom: 120px;
 
   @media (max-width: $tablet-width) {
-    margin: 0 auto;
+    padding: 100px 0 50px;
     margin-bottom: 100px;
   }
 
   @media (max-width: $mobile-width) {
-    margin: 0 auto;
-    margin-bottom: 70px;
+    padding: 70px 0 50px;
   }
+}
+
+.advantages {
+  max-width: 1160px;
+  margin: 0 auto;
 }
 
 .advantages__headline {

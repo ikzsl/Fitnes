@@ -1,7 +1,8 @@
 .subscriptions {
   background-color: $bg-gray;
   padding: 120px 100px;
-  padding-bottom: 130px;
+  padding-bottom: 120px;
+  margin-bottom: 120px;
 
   @media (max-width: $tablet-width) {
     padding: 100px 160px;
@@ -11,6 +12,7 @@
   @media (max-width: $mobile-width) {
     padding: 70px 15px;
     padding-bottom: 65px;
+    margin-bottom: 100px;
   }
 }
 
@@ -90,12 +92,27 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  &--active {
+    border-bottom: 2px solid red;
+    color: $blue-dark;
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @media (max-width: $mobile-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .subscriptions__list {
   position: relative;
   max-width: 1160px;
-  display: flex;
+  display: none;
   justify-content: space-between;
   flex-wrap: wrap;
   list-style: none;
@@ -104,13 +121,17 @@
   z-index: 0;
   // overflow: hidden;
 
+  &--active {
+    display: flex;
+  }
+
   &::after {
     position: absolute;
     content: "";
-    width: 290px;
-    height: 350px;
-    bottom: -190px;
-    right: -170px;
+    width: 390px;
+    height: 450px;
+    bottom: -240px;
+    right: -240px;
     background-image: url("../img/weight@1x.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -118,12 +139,13 @@
     z-index: -1;
   }
 
-
   @media (max-width: $tablet-width) {
     flex-direction: column;
     align-items: center;
 
     &::after {
+      width: 320px;
+      height: 350px;
       bottom: -190px;
       right: -180px;
     }
