@@ -1219,12 +1219,14 @@ body {
 
 .promo {
   max-width: 1160px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-bottom: 100px; }
   @media (max-width: 1199px) {
     .promo {
       padding: 60px 45px;
       padding-bottom: 80px;
-      padding-top: 0; } }
+      padding-top: 0;
+      margin-bottom: 0; } }
   @media (max-width: 767px) {
     .promo {
       padding: 0 15px;
