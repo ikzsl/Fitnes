@@ -93,3 +93,47 @@ var swiper2 = new Swiper('.swiper-container2', {
 
 swiper2.init();
 swiper2.width = 200;
+
+// -----toggler
+var subscriptions = document.querySelector('.subscriptions');
+var togglers = subscriptions.querySelectorAll('.subscriptions__toggler-item');
+var subscriptionsLists = subscriptions.querySelectorAll('.subscriptions__list');
+
+var activeScreen = 0;
+
+var addActiveClass = function () {
+  for (var i = 0; i < togglers.length; i += 1) {
+    if (i === activeScreen) {
+      subscriptionsLists[i].classList.add('subscriptions__list--active');
+      togglers[i].classList.add('subscriptions__toggler-item--active');
+    }
+  }
+};
+
+var removeActiveClass = function () {
+  for (var i = 0; i < togglers.length; i += 1) {
+    if (i === activeScreen) {
+      subscriptionsLists[i].classList.remove('subscriptions__list--active');
+      togglers[i].classList.remove('subscriptions__toggler-item--active');
+    }
+  }
+};
+
+var onTogglerClick = function (e) {
+  for (var i = 0; i < togglers.length; i += 1) {
+    if (togglers[i] === e.target) {
+      removeActiveClass();
+      activeScreen = i;
+      addActiveClass();
+    }
+  }
+};
+
+var addEventListeners = function () {
+  for (var i = 0; i < togglers.length; i += 1) {
+    togglers[i].addEventListener('click', onTogglerClick);
+  }
+};
+
+addActiveClass();
+addEventListeners();
