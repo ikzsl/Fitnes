@@ -1909,10 +1909,7 @@ body {
   @media (max-width: 767px) {
     .actions__item {
       width: 100%;
-      margin-bottom: 30px;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; } }
+      margin-bottom: 30px; } }
   .actions__item--main {
     border: none;
     width: 280px;
@@ -1942,6 +1939,9 @@ body {
   font-size: 28px;
   line-height: 44px;
   color: #ffffff; }
+  @media (max-width: 767px) {
+    .actions__item--main h3 {
+      text-align: center; } }
 
 .actions__main-item-price {
   display: block;
@@ -1970,6 +1970,9 @@ body {
   letter-spacing: 0.05em;
   -webkit-transition: all ease 0.3s;
   transition: all ease 0.3s; }
+  @media (max-width: 767px) {
+    .actions__item a {
+      text-align: center; } }
   .actions__item a:hover, .actions__item a:focus {
     text-decoration: none;
     opacity: 0.8; }
