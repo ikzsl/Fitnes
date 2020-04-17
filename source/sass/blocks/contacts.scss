@@ -41,20 +41,20 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  max-height: 130px;
+  height: 130px;
+  // max-width: 50%;
 
   list-style: none;
   padding: 0;
 
   @media (max-width: $tablet-width) {
-    max-height: 150px;
+    height: 150px;
   }
 
   @media (max-width: $mobile-width) {
-    max-height: none;
+    height: auto;
   }
 }
-
 
 .contacts__list-item {
   display: flex;
@@ -81,13 +81,11 @@
     font-size: 20px;
     line-height: 30px;
 
-    height: 70px;
+    min-height: 70px;
   }
 
   @media (max-width: $mobile-width) {
     padding: 0;
-    // width: 280px;
-    // margin: 0 auto;
   }
 }
 

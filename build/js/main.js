@@ -36,7 +36,7 @@ var swiper = new Swiper('.swiper-container', {
       spaceBetween: 30,
       slidesPerGroup: 2,
       slidesOffsetBefore: -30,
-  slidesOffsetAfter: 30,
+      slidesOffsetAfter: 30,
     },
     // when window width is >= 1200px
     1200: {

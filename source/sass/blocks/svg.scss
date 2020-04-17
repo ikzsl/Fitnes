@@ -1,18 +1,17 @@
 .svg__big-text {
-    font-size: 71px;
+  font-size: 71px;
+  text-anchor: middle;
+
+  @media (max-width: $tablet-width) {
+    font-size: 58px;
+  }
+}
+
+.svg__small-text {
+  text-anchor: end;
+
+  @media (max-width: $mobile-width) {
     text-anchor: middle;
-  
-  
-    @media (max-width: $tablet-width) {
-      font-size: 58px;
-    }
+    // margin-left: 10px;
   }
-  
-  .svg__small-text {
-    text-anchor: end;
-  
-    @media (max-width: $mobile-width) {
-      text-anchor: middle;
-      // margin-left: 10px;
-    }
-  }
+}

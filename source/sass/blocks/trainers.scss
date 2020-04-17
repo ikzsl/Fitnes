@@ -50,21 +50,16 @@
     max-width: 630px;
   }
 
-
   @media (max-width: $mobile-width) {
     max-width: 226px;
-    
-    
   }
 }
 
 .trainers__list {
   list-style: none;
-  margin: 0; 
+  margin: 0;
 }
 
 .trainers__list-item {
-  margin-right: 50px; 
-
+  margin-right: 50px;
 }
-

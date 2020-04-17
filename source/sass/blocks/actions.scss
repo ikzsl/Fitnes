@@ -60,7 +60,6 @@
   display: flex;
   justify-content: space-between;
 
-
   @media (max-width: $tablet-width) {
     width: 100%;
     margin-bottom: 30px;
@@ -79,7 +78,7 @@
   object-fit: cover;
   object-position: top;
 
-  font-family: 'object-fit: cover; object-position: top;';
+  font-family: "object-fit: cover; object-position: top;", sans-serif;
 
   @media (max-width: $tablet-width) {
     object-fit: cover;
@@ -171,7 +170,6 @@
   line-height: 44px;
   color: $white;
 }
-
 
 .actions__main-item-price {
   display: block;

@@ -57,6 +57,7 @@
 .advantages__item {
   list-style: none;
   margin: 0;
+  height: 152px;
 
   &:nth-child(1),
   &:nth-child(4) {
@@ -81,6 +82,7 @@
 
   @media (max-width: $tablet-width) {
     padding: 50px 10px;
+    height: 240px;
 
     &:nth-child(1),
     &:nth-child(4) {
@@ -110,15 +112,6 @@
       padding-bottom: 0;
     }
   }
-}
-
-
-.advantages__item  {
-height: 152px;
-
-@media (max-width: $tablet-width) {
-  height: 240px;
-}
 }
 
 .advantages__item h3 {
