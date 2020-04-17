@@ -137,15 +137,80 @@
   background-size: cover;
   background-position: center;
 
+  &::before {
+    top: 0;
+    left: 0;
+    z-index: 0;
+    content: "";
+    position: absolute;
+    background-color: rgba(20, 54, 122, 0.5);
+    background-image: url("../img/ring.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100px 100px;
+    width: 100%;
+    height: 100%;
+  }
+
   @media (max-width: $tablet-width) {
     margin: 0 auto;
     margin-top: -85px;
     width: 266px;
     height: 167px;
+
+    &::before {
+      background-size: 73px 73px;
+    }
   }
 
   @media (max-width: $mobile-width) {
     margin-top: 40px;
     width: 100%;
+  }
+}
+
+.gym__video-button {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: none;
+  background: linear-gradient(224.89deg, #003d85 25.38%, #b80027 74.89%);
+  left: calc(50% - 36px);
+  top: calc(50% - 36px);
+  transition: all ease 0.3s;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 0 20px 1px #b80027;
+  }
+
+  &:active {
+    box-shadow: 0 0 20px 5px #b80027;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 52px;
+    height: 52px;
+    left: calc(50% - 26px);
+    top: calc(50% - 26px);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: calc(50% - 8px);
+    left: calc(50% - 3px);
+    border-left: 14px solid $white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+
+    @media (max-width: $tablet-width) {
+      top: calc(50% - 8px);
+      left: calc(50% - 4px);
+    }
   }
 }
