@@ -1990,7 +1990,8 @@ body {
   @media (max-width: 767px) {
     .reviews {
       margin-bottom: 70px;
-      width: 266px; } }
+      width: 90%;
+      min-width: 290px; } }
 
 .reviews__headline {
   margin: 0;
@@ -2018,6 +2019,9 @@ body {
 
 .reviews__slider {
   overflow: hidden; }
+  @media (max-width: 767px) {
+    .reviews__slider {
+      margin: 0 20px; } }
 
 .reviews__list {
   list-style: none;
@@ -2035,9 +2039,8 @@ body {
       margin-right: 80px; } }
   @media (max-width: 767px) {
     .reviews__list-item {
-      max-width: 226px;
-      margin-right: 38px;
-      min-height: 335px; } }
+      max-width: 100%;
+      margin: 0; } }
 
 .reviews__list-item img {
   margin-left: 60px;
@@ -2051,6 +2054,7 @@ body {
 
 .reviews__list-item h3 {
   margin-top: 60px;
+  margin-right: 10px;
   color: #ffffff;
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 20px;
