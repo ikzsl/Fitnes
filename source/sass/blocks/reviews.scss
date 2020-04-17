@@ -9,7 +9,8 @@
 
   @media (max-width: $mobile-width) {
     margin-bottom: 70px;
-    width: 266px;
+    width: 90%;
+    min-width: 290px;
   }
 }
 
@@ -45,12 +46,22 @@
 
 .reviews__slider {
   overflow: hidden;
+
+  @media (max-width: $mobile-width) {
+    margin: 0 20px;
+    // min-height: 335px;
+  }
 }
 
 .reviews__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (max-width: $mobile-width) {
+    // margin-right: 38px;
+    // min-height: 335px;
+  }
 }
 
 .reviews__list-item {
@@ -67,9 +78,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    max-width: 226px;
-    margin-right: 38px;
-    min-height: 335px;
+    max-width: 100%;
+    margin: 0;
+    // min-height: 335px;
   }
 }
 
@@ -87,6 +98,7 @@
 
 .reviews__list-item h3 {
   margin-top: 60px;
+  margin-right: 10px;
   // display: inline;
   color: $white;
   font-family: $roboto-bold;

@@ -69,7 +69,7 @@ var swiper2 = new Swiper('.swiper-container2', {
   // Optional parameters
   direction: 'horizontal',
   updateOnWindowResize: true,
-  slidesOffsetBefore: 20,
+  slidesOffsetBefore: 0,
   // slidesOffsetAfter: 40,
 
   breakpoints: {
@@ -92,7 +92,7 @@ var swiper2 = new Swiper('.swiper-container2', {
 });
 
 swiper2.init();
-swiper2.width = 200;
+// swiper2.width = 200;
 
 // -----toggler
 var subscriptions = document.querySelector('.subscriptions');
