@@ -910,24 +910,24 @@ body {
       margin-top: 40px;
       width: 100%; } }
 
-.subscription {
+.subscriptions {
   background-color: #f8f9fc;
   padding: 120px 100px;
   padding-bottom: 130px; }
   @media (max-width: 1199px) {
-    .subscription {
+    .subscriptions {
       padding: 100px 160px;
       padding-bottom: 80px; } }
   @media (max-width: 767px) {
-    .subscription {
+    .subscriptions {
       padding: 70px 15px;
       padding-bottom: 65px; } }
 
-.subscription__wrapper {
+.subscriptions__wrapper {
   max-width: 1160px;
   margin: 0 auto; }
 
-.subscription__headline {
+.subscriptions__headline {
   text-align: center;
   margin: 0;
   margin-bottom: 45px;
@@ -937,11 +937,11 @@ body {
   letter-spacing: 0.03em;
   color: #102654; }
   @media (max-width: 1199px) {
-    .subscription__headline {
+    .subscriptions__headline {
       font-size: 42px;
       line-height: 42px; } }
   @media (max-width: 767px) {
-    .subscription__headline {
+    .subscriptions__headline {
       font-size: 32px;
       line-height: 32px; } }
 
@@ -990,7 +990,7 @@ body {
       font-size: 16px;
       line-height: 24px; } }
 
-.subscription__list {
+.subscriptions__list {
   position: relative;
   max-width: 1160px;
   display: -webkit-box;
@@ -1005,7 +1005,7 @@ body {
   margin: 0;
   padding: 0;
   z-index: 0; }
-  .subscription__list::after {
+  .subscriptions__list::after {
     position: absolute;
     content: "";
     width: 290px;
@@ -1018,7 +1018,7 @@ body {
     background-size: contain;
     z-index: -1; }
   @media (max-width: 1199px) {
-    .subscription__list {
+    .subscriptions__list {
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
@@ -1026,11 +1026,11 @@ body {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      .subscription__list::after {
+      .subscriptions__list::after {
         bottom: -190px;
         right: -180px; } }
   @media (max-width: 767px) {
-    .subscription__list {
+    .subscriptions__list {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
@@ -1038,10 +1038,10 @@ body {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; }
-      .subscription__list::after {
+      .subscriptions__list::after {
         display: none; } }
 
-.subscription__item {
+.subscriptions__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1061,12 +1061,12 @@ body {
   border: 5px solid transparent;
   background-color: #ffffff;
   z-index: 10; }
-  .subscription__item:hover, .subscription__item:focus {
+  .subscriptions__item:hover, .subscriptions__item:focus {
     -o-border-image: linear-gradient(112deg, #ed0233 17%, #003eb7 96%) 10;
        border-image: linear-gradient(112deg, #ed0233 17%, #003eb7 96%) 10;
     color: #102654; }
   @media (max-width: 1199px) {
-    .subscription__item {
+    .subscriptions__item {
       -webkit-box-flex: 0;
           -ms-flex-positive: 0;
               flex-grow: 0;
@@ -1074,10 +1074,10 @@ body {
       height: 256px;
       margin-bottom: 40px; } }
   @media (max-width: 767px) {
-    .subscription__item {
+    .subscriptions__item {
       margin-bottom: 35px; } }
 
-.subscription__item h3 {
+.subscriptions__item h3 {
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-size: 26px;
   line-height: 40px;
@@ -1086,15 +1086,15 @@ body {
   margin-bottom: 10px;
   padding: 0; }
   @media (max-width: 1199px) {
-    .subscription__item h3 {
+    .subscriptions__item h3 {
       font-size: 26px;
       line-height: 29px; } }
   @media (max-width: 767px) {
-    .subscription__item h3 {
+    .subscriptions__item h3 {
       font-size: 22px;
       line-height: 24px; } }
 
-.subscription__item h4 {
+.subscriptions__item h4 {
   font-family: "RobotoCondensed", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
@@ -1103,7 +1103,7 @@ body {
   margin: 0;
   margin-bottom: 60px; }
 
-.subscription p {
+.subscriptions p {
   position: relative;
   margin: 0;
   max-width: 170px;
@@ -1113,7 +1113,7 @@ body {
   line-height: 90px;
   color: #103aae;
   z-index: 1; }
-  .subscription p::before {
+  .subscriptions p::before {
     content: attr(data-value);
     position: absolute;
     font-size: 100px;
@@ -1123,16 +1123,16 @@ body {
     bottom: -15px;
     z-index: -1; }
   @media (max-width: 767px) {
-    .subscription p {
+    .subscriptions p {
       margin: 25px 35px;
       font-size: 48px;
       line-height: 72px; }
-      .subscription p::before {
+      .subscriptions p::before {
         font-size: 80px;
         line-height: 120px;
         left: -15px;
         bottom: 0; }
-      .subscription p::after {
+      .subscriptions p::after {
         position: absolute;
         content: "";
         width: 24px;
@@ -1142,7 +1142,7 @@ body {
         background-image: url("../img/rouble.svg");
         background-size: contain; } }
 
-.subscription span {
+.subscriptions span {
   color: #102654;
   font-family: "RobotoCondensed", "Arial", sans-serif; }
 
@@ -1541,6 +1541,7 @@ body {
 .advantages__item {
   list-style: none;
   margin: 0;
+  height: 152px;
   padding: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1555,7 +1556,8 @@ body {
     padding-bottom: 60px; }
   @media (max-width: 1199px) {
     .advantages__item {
-      padding: 50px 10px; }
+      padding: 50px 10px;
+      height: 240px; }
       .advantages__item:nth-child(1), .advantages__item:nth-child(4) {
         margin-right: 0; }
       .advantages__item:nth-child(1), .advantages__item:nth-child(2) {
@@ -1571,12 +1573,6 @@ body {
       .advantages__item:nth-child(4), .advantages__item:nth-child(5) {
         padding-top: 50px;
         padding-bottom: 0; } }
-
-.advantages__item {
-  height: 152px; }
-  @media (max-width: 1199px) {
-    .advantages__item {
-      height: 240px; } }
 
 .advantages__item h3 {
   margin: 0;
@@ -1768,7 +1764,7 @@ body {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-  font-family: 'object-fit: cover; object-position: top;'; }
+  font-family: "object-fit: cover; object-position: top;", sans-serif; }
   @media (max-width: 1199px) {
     .actions__main-item-image {
       -o-object-fit: cover;

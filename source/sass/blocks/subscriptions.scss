@@ -1,4 +1,4 @@
-.subscription {
+.subscriptions {
   background-color: $bg-gray;
   padding: 120px 100px;
   padding-bottom: 130px;
@@ -14,12 +14,12 @@
   }
 }
 
-.subscription__wrapper {
+.subscriptions__wrapper {
   max-width: 1160px;
   margin: 0 auto;
 }
 
-.subscription__headline {
+.subscriptions__headline {
   text-align: center;
   margin: 0;
   margin-bottom: 45px;
@@ -92,7 +92,7 @@
   }
 }
 
-.subscription__list {
+.subscriptions__list {
   position: relative;
   max-width: 1160px;
   display: flex;
@@ -139,7 +139,7 @@
   }
 }
 
-.subscription__item {
+.subscriptions__item {
   display: flex;
   flex-direction: column;
   // justify-content: center;
@@ -172,7 +172,7 @@
   }
 }
 
-.subscription__item h3 {
+.subscriptions__item h3 {
   font-family: $roboto-bold;
   font-size: 26px;
   line-height: 40px;
@@ -192,7 +192,7 @@
   }
 }
 
-.subscription__item h4 {
+.subscriptions__item h4 {
   font-family: $roboto;
   font-weight: normal;
   font-size: 16px;
@@ -202,7 +202,7 @@
   margin-bottom: 60px;
 }
 
-.subscription p {
+.subscriptions p {
   position: relative;
   margin: 0;
   max-width: 170px;
@@ -251,7 +251,7 @@
   }
 }
 
-.subscription span {
+.subscriptions span {
   color: $blue-dark;
   font-family: $roboto;
 }
