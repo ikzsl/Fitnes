@@ -23,13 +23,17 @@
   padding: 0;
   margin: 0;
   font-family: $roboto-bold;
+  font-weight: normal;
   font-size: 18px;
   line-height: 27px;
   z-index: 1;
   opacity: 1;
 
   bottom: 20px;
-  position: absolute;
+  // position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .card h4 {
@@ -79,9 +83,12 @@
 }
 
 .card__layer {
+  display: flex;
+  flex-direction: column-reverse;
   position: absolute;
   top: 0;
-  padding: 45px;
+  padding: 50px 45px;
+  padding-bottom: 20px;
   width: 260px;
   height: 294px;
   transition: 0.3s ease;
@@ -97,6 +104,7 @@
 .card:hover .card__layer {
   opacity: 1;
   background: rgba(16, 38, 84, 0.89);
+  flex-direction: column;
 }
 
 .card:hover.card h3 {

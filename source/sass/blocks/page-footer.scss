@@ -6,7 +6,7 @@
   background-color: #030a1a;
   font-size: 15px;
   line-height: 25px;
-  padding: 45px;
+  padding: 45px 100px;
   color: $white;
 
   @media (max-width: $mobile-width) {
@@ -29,6 +29,7 @@
 }
 
 .page-footer__logo {
+  margin-right: 50px;
   display: block;
   width: 90px;
   height: 20px;

@@ -3,7 +3,7 @@
   max-width: 1160px;
   margin: 0 auto;
   // padding: 120px 100px;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
 
 
   @media (max-width: $tablet-width) {
@@ -40,7 +40,7 @@
   min-width: 500px;
   min-height: 500px;
 
-  padding: 90px 80px;
+  padding: 85px 80px;
 
 
   @media (max-width: $tablet-width) {
@@ -110,7 +110,7 @@
   font-family: $roboto-bold;
   font-size: 40px;
   line-height: 45px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 
   @media (max-width: $tablet-width) {
     font-size: 24px;
@@ -139,6 +139,7 @@
 
 .promo__info-headline {
   font-family: $bebas-bold;
+  font-weight: normal;
   font-size: 90px;
   line-height: 90px;
   color: $white;
@@ -155,11 +156,13 @@
 
 .promo__info-desc {
   font-family: $roboto;
+  font-weight: normal;
   font-size: 18px;
   line-height: 27px;
+  letter-spacing: 0;
   color: $white;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 
   @media (max-width: $tablet-width) {
     font-size: 12px;

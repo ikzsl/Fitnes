@@ -16,11 +16,12 @@
 
 .reviews__headline {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
   text-align: center;
   text-transform: uppercase;
 
   font-family: $bebas-bold;
+  font-weight: normal;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -97,16 +98,20 @@
 }
 
 .reviews__list-item h3 {
-  margin-top: 60px;
+  margin: 0;
+  margin-top: 55px;
   margin-right: 10px;
+  margin-bottom: 10px;
   // display: inline;
   color: $white;
   font-family: $roboto-bold;
+  font-weight: normal;
   font-size: 20px;
   line-height: 30px;
 }
 
 .reviews__list-item p {
+  margin: 0;
   padding-left: 170px;
   width: 330px;
   color: $white;

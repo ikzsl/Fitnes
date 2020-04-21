@@ -17,13 +17,14 @@
 
 .actions__headline {
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 56px;
   text-align: center;
   text-transform: uppercase;
 
   font-family: $bebas-bold;
+  font-weight: normal;
   font-size: 49px;
-  line-height: 49px;
+  line-height: 40px;
   letter-spacing: 0.03em;
 
   color: $blue-dark;
@@ -53,7 +54,7 @@
 .actions__main {
   // border: 1px solid red;
   background-color: $red;
-  width: 49%;
+  width: 48%;
   height: 462px;
   color: $white;
 
@@ -99,7 +100,7 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 49%;
+  width: 48%;
   min-height: 462px;
 
   @media (max-width: $tablet-width) {
@@ -122,19 +123,10 @@
   border: 7px solid $blue-dark;
   border-image: linear-gradient(112deg, $red 17%, $blue-light 96%) 10;
   min-height: 211px;
-
-  padding: 30px;
-
-  @media (max-width: $tablet-width) {
-    width: 48%;
-  }
-
-  @media (max-width: $mobile-width) {
-    width: 100%;
-    margin-bottom: 30px;
-  }
+  padding: 25px;
 
   &--main {
+    padding: 35px 40px 45px 45px;
     border: none;
     width: 280px;
     height: 100%;
@@ -144,6 +136,15 @@
       margin-bottom: 0;
       height: 300px;
     }
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 48%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
 
@@ -163,7 +164,7 @@
 
 .actions__item--main h3 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-family: $roboto-bold;
   font-size: 28px;
   line-height: 44px;
@@ -175,6 +176,8 @@
 }
 
 .actions__main-item-price {
+  font-family: $roboto-bold;
+  font-weight: normal;
   display: block;
   font-size: 70px;
   line-height: 60px;

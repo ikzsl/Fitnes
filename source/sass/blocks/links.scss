@@ -21,7 +21,8 @@
 .links__item {
   display: flex;
   margin-right: 40px;
-  justify-content: space-between;
+  margin-left: 10px;
+  justify-content: space-around;
 
   font-family: $roboto;
   font-size: 14px;

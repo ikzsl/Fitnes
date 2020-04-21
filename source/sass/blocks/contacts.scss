@@ -1,6 +1,6 @@
 .contacts {
   background-color: $white;
-  padding: 70px 120px;
+  padding: 60px 120px;
   padding-bottom: 0;
   color: $blue-dark;
   width: 50%;
@@ -18,8 +18,9 @@
 
 .contacts__headline {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-family: $bebas-bold;
+  font-weight: normal;
   font-size: 49px;
   line-height: 64px;
   letter-spacing: 0.03em;
@@ -59,9 +60,10 @@
 .contacts__list-item {
   display: flex;
   flex-direction: column;
-  height: 60px;
+  height: 50px;
 
-  padding: 0 60px;
+  padding: 0 60px 60px;
+  
 
   font-family: $roboto-bold;
   font-size: 16px;
@@ -98,7 +100,7 @@
 
   font-family: $roboto;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 25px;
 
   @media (max-width: $tablet-width) {
     font-size: 18px;

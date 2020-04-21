@@ -1,7 +1,7 @@
 .subscriptions {
   background-color: $bg-gray;
-  padding: 120px 100px;
-  padding-bottom: 120px;
+  padding: 115px 100px;
+  padding-bottom: 116px;
   margin-bottom: 120px;
 
   @media (max-width: $tablet-width) {
@@ -24,8 +24,9 @@
 .subscriptions__headline {
   text-align: center;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   font-family: $bebas-bold;
+  font-weight: normal;
   font-size: 49px;
   line-height: 49px;
   letter-spacing: 0.03em;
@@ -69,7 +70,7 @@
 .subscriptions__toggler-item {
   cursor: pointer;
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   bottom: -2px;
   border-bottom: 2px solid transparent;
 
@@ -128,10 +129,10 @@
   &::after {
     position: absolute;
     content: "";
-    width: 390px;
-    height: 450px;
-    bottom: -240px;
-    right: -240px;
+    width: 500px;
+    height: 500px;
+    bottom: -270px;
+    right: -300px;
     background-image: url("../img/weight@1x.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -168,8 +169,8 @@
   align-items: center;
   position: relative;
   transition: all 0.3s ease;
-  padding-top: 60px;
-  width: 30%;
+  padding-top: 50px;
+  width: 31%;
   min-height: 448px;
   border: 5px solid transparent;
   background-color: $white;
@@ -200,7 +201,7 @@
   line-height: 40px;
   color: $blue-dark;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding: 0;
 
   @media (max-width: $tablet-width) {
@@ -221,7 +222,7 @@
   line-height: 24px;
   color: $blue-gray;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 65px;
 }
 
 .subscriptions p {
@@ -229,11 +230,12 @@
   margin: 0;
   max-width: 170px;
 
-  margin-bottom: 50px;
+  margin-bottom: 32px;
 
   font-family: $roboto-bold;
   font-size: 60px;
   line-height: 90px;
+  white-space: nowrap;
   color: $blue;
   z-index: 1;
 
@@ -244,7 +246,7 @@
     line-height: 150px;
     color: #e8e8e8;
     left: -20px;
-    bottom: -15px;
+    bottom: -5px;
     z-index: -1;
   }
 

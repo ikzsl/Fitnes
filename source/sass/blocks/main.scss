@@ -48,8 +48,8 @@
   align-items: flex-end;
   position: relative;
   margin: 0;
-  padding-right: 65px;
-  padding-bottom: 65px;
+  padding-right: 70px;
+  padding-bottom: 45px;
   width: 40%;
   height: 556px;
 
@@ -121,6 +121,7 @@
   font-size: 49px;
   line-height: 49px;
   font-family: $bebas;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 15px;
 
@@ -140,10 +141,12 @@
   font-family: $bebas-bold;
   font-size: 109px;
   line-height: 109px;
+  font-weight: normal;
   text-transform: uppercase;
   text-align: right;
+  letter-spacing: 0.03em;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 55px;
   z-index: 1;
 
 
@@ -165,8 +168,8 @@
 .main__desc {
   position: absolute;
 
-  bottom: 205px;
-  right: 320px;
+  bottom: 190px;
+  right: 330px;
   width: 115px;
   padding: 0;
   margin: 0;
@@ -220,7 +223,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
 
   @media (max-width: $tablet-width) {
     display: none;
@@ -233,9 +236,9 @@
   color: inherit;
   text-align: center;
   vertical-align: middle;
-  padding: 6px 0;
-  width: 30px;
-  height: 30px;
+  padding: 4px 0;
+  width: 25px;
+  height: 25px;
   margin-bottom: 10px;
   transition: all 0.2s ease;
   border-radius: 50%;
