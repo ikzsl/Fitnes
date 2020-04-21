@@ -193,11 +193,11 @@
   }
 
   &--5 {
-    background-image: url("../../img/5+.svg");
+    background-image: url("../img/5+.svg");
     width: 70px;
 
     @media (max-width: $mobile-width) {
-      background-image: url("../../img/5+-mobile.svg");
+      background-image: url("../img/5+-mobile.svg");
     }
     
   }
