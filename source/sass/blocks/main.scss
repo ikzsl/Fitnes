@@ -62,13 +62,13 @@
     top: 0;
     width: 500px;
     height: 556px;
-    background-image: url("../img/superman@1x.png");
+    background-image: url("../img/superman@1x.jpg");
     background-position: center;
     background-size: cover;
 
     @media only screen and (min-resolution: 192dpi),
       only screen and (min-resolution: 2dppx) {
-      background-image: url("../img/superman@2x.png");
+      background-image: url("../img/superman@2x.jpg");
     }
   }
 
