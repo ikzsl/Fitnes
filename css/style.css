@@ -624,12 +624,12 @@ body {
     top: 0;
     width: 500px;
     height: 556px;
-    background-image: url("../img/superman@1x.png");
+    background-image: url("../img/superman@1x.jpg");
     background-position: center;
     background-size: cover; }
     @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
       .main__desc-wrapper::after {
-        background-image: url("../img/superman@2x.png"); } }
+        background-image: url("../img/superman@2x.jpg"); } }
   @media (max-width: 1199px) {
     .main__desc-wrapper {
       width: 50%;
