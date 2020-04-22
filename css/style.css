@@ -2213,6 +2213,9 @@ body {
   font-weight: normal;
   font-size: 20px;
   line-height: 30px; }
+  @media (max-width: 767px) {
+    .reviews__list-item h3 {
+      margin-bottom: 35px; } }
 
 .reviews__list-item p {
   margin: 0;
