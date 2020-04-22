@@ -9,6 +9,10 @@
   padding: 45px 100px;
   color: $white;
 
+  @media (max-width: $tablet-width) {
+    padding: 45px 45px;
+  }
+
   @media (max-width: $mobile-width) {
     flex-direction: column;
     align-items: flex-start;
