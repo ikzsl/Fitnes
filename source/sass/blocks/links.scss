@@ -14,7 +14,7 @@
   @media (max-width: $mobile-width) {
     flex-direction: column;
     justify-content: flex-start;
-    height: 150px;
+    height: 130px;
   }
 }
 
@@ -33,15 +33,15 @@
   }
 
   @media (max-width: $mobile-width) {
-    height: 50px;
-    margin-right: 70px;
+    height: 40px;
+    margin-left: 0;
+    margin-right: 60px;
 
     font-size: 16px;
     line-height: 19px;
 
     &:first-of-type {
-
-      padding-top: 50px;
+      padding-top: 40px;
     }
   }
 }
@@ -49,7 +49,6 @@
 .links__link {
   text-decoration: none;
   color: inherit;
-
 
   &:hover,
   &:focus {

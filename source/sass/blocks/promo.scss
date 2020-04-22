@@ -5,7 +5,6 @@
   // padding: 120px 100px;
   margin-bottom: 120px;
 
-
   @media (max-width: $tablet-width) {
     padding: 60px 45px;
     padding-bottom: 95px;
@@ -15,7 +14,7 @@
 
   @media (max-width: $mobile-width) {
     padding: 0 15px;
-    padding-bottom: 30px;
+    margin-bottom: 70px;
   }
 }
 
@@ -42,7 +41,6 @@
 
   padding: 85px 80px;
 
-
   @media (max-width: $tablet-width) {
     min-width: 292px;
     min-height: 292px;
@@ -68,7 +66,6 @@
   // width: 100px;
   margin-top: -5px;
 }
-
 
 .promo__date,
 .promo__time {
@@ -117,6 +114,10 @@
     line-height: 24px;
     margin-bottom: 10px;
   }
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 15px;
+  }
 }
 
 .promo__data-desc {
@@ -135,7 +136,6 @@
     left: 15px;
   }
 }
-
 
 .promo__info-headline {
   font-family: $bebas-bold;
@@ -170,7 +170,6 @@
     margin-bottom: 30px;
   }
 }
-
 
 .promo__image-container {
   background-color: #000247;

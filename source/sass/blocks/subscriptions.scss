@@ -12,8 +12,8 @@
 
   @media (max-width: $mobile-width) {
     padding: 70px 15px;
-    padding-bottom: 65px;
-    margin-bottom: 100px;
+    padding-bottom: 35px;
+    margin-bottom: 70px;
   }
 }
 
@@ -42,6 +42,7 @@
   @media (max-width: $mobile-width) {
     font-size: 32px;
     line-height: 32px;
+    margin-bottom: 20px;
   }
 }
 
@@ -193,7 +194,9 @@
   }
 
   @media (max-width: $mobile-width) {
-    // height: 256px;
+    height: 384px;
+    min-height: 384px;
+    padding-top: 45px;
     margin-bottom: 35px;
   }
 }
@@ -227,6 +230,10 @@
   color: $blue-gray;
   margin: 0;
   margin-bottom: 65px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 30px;
+  }
 }
 
 .subscriptions p {
@@ -255,7 +262,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin: 25px 35px;
+    margin: 27px 35px;
 
     font-size: 48px;
     line-height: 72px;

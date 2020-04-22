@@ -16,9 +16,10 @@
 
   @media (max-width: $mobile-width) {
     padding: 0 15px;
-    padding-top: 100px;
+    padding-top: 115px;
     margin-bottom: 70px;
     min-height: 490px;
+    height: 490px;
   }
 }
 
@@ -134,6 +135,7 @@
   @media (max-width: $mobile-width) {
     font-size: 28px;
     line-height: 28px;
+    margin-bottom: 10px;
   }
 }
 
@@ -162,13 +164,12 @@
     font-size: 78px;
     line-height: 78px;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }
 
 .main__desc {
   position: absolute;
-
   bottom: 190px;
   right: 330px;
   width: 115px;
@@ -182,16 +183,14 @@
     font-size: 14px;
     line-height: 21px;
     margin-left: 120px;
-
     bottom: 145px;
     right: 220px;
   }
 
   @media (max-width: $mobile-width) {
-
     margin-left: 50px;
-    bottom: 200px;
-    right: 170px;
+    bottom: 210px;
+    right: 180px;
   }
 }
 

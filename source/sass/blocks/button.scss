@@ -33,6 +33,10 @@
     @media (max-width: $tablet-width) {
       padding: 18px 30px;
     }
+
+    @media (max-width: $mobile-width) {
+      padding: 22px 30px;
+    }
   }
 
   &--sub {
