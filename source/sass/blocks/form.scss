@@ -15,7 +15,7 @@
   border-bottom: 1px solid #74819c;
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 
   @include placeholder {
@@ -27,7 +27,6 @@
     @include placeholder {
       // color: red;
       opacity: 0.1;
-     
     }
   }
 }
@@ -89,5 +88,6 @@
 
   @media (max-width: $mobile-width) {
     width: 100%;
+    margin-top: 20px;
   }
 }
