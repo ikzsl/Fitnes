@@ -27,6 +27,7 @@
     @include placeholder {
       // color: red;
       opacity: 0.1;
+     
     }
   }
 }
@@ -38,7 +39,7 @@
 }
 
 .form input[type="text"] {
-  width: 47%;
+  width: 45%;
 
   @media (max-width: $mobile-width) {
     width: 100%;
@@ -46,7 +47,7 @@
 }
 
 .form input[type="tel"] {
-  width: 47%;
+  width: 45%;
 
   @media (max-width: $mobile-width) {
     width: 100%;

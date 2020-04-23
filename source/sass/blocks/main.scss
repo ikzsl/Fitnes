@@ -30,7 +30,6 @@
   justify-content: space-between;
   min-height: 556px;
 
-
   @media (max-width: $tablet-width) {
     min-height: 390px;
   }
@@ -54,7 +53,6 @@
   width: 40%;
   height: 556px;
 
-
   &::after {
     position: absolute;
     content: "";
@@ -66,15 +64,12 @@
     background-position: center;
     background-size: cover;
 
-    @media only screen and (min-resolution: 192dpi),
-      only screen and (min-resolution: 2dppx) {
+    @media only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
       background-image: url("../img/superman@2x.jpg");
     }
   }
 
-
   @media (max-width: $tablet-width) {
-
     width: 50%;
     height: 390px;
 
@@ -129,7 +124,7 @@
   @media (max-width: $tablet-width) {
     font-size: 34px;
     line-height: 34px;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
   }
 
   @media (max-width: $mobile-width) {
@@ -142,6 +137,7 @@
 .main__headline {
   position: relative;
   font-family: $bebas-bold;
+  text-shadow: $white 1px 1px 0, $white -1px -1px 0, $white -1px 1px 0, $white 1px -1px 0;
   font-size: 109px;
   line-height: 109px;
   font-weight: normal;
@@ -151,7 +147,6 @@
   margin: 0;
   margin-bottom: 55px;
   z-index: 1;
-
 
   @media (max-width: $tablet-width) {
     font-size: 86px;
@@ -183,8 +178,8 @@
     font-size: 14px;
     line-height: 21px;
     margin-left: 120px;
-    bottom: 145px;
-    right: 220px;
+    bottom: 140px;
+    right: 230px;
   }
 
   @media (max-width: $mobile-width) {

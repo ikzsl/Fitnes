@@ -7,8 +7,13 @@
   min-width: 112px;
   flex-wrap: wrap;
 
+  @media (max-width: $tablet-width) {
+   margin-right: -10px;
+  }
+
   @media (max-width: $mobile-width) {
     min-width: 150px;
+    margin: 0;
   }
 }
 
