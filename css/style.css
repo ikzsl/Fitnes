@@ -1723,12 +1723,12 @@ body {
         padding-bottom: 0;
         padding-top: 0; }
       .advantages__item:nth-child(4), .advantages__item:nth-child(5) {
-        padding-top: 50px;
+        padding-top: 45px;
         padding-bottom: 0; } }
 
 .advantages__item h3 {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding: 0;
   font-family: "RobotoCondensed-Bold", "Arial", sans-serif;
   font-weight: normal;
@@ -1745,6 +1745,10 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #102654; }
+  @media (max-width: 767px) {
+    .advantages__item p {
+      width: 230px;
+      margin: 0 auto; } }
 
 .advantages__img-container {
   margin-right: 30px;
@@ -1753,7 +1757,7 @@ body {
   @media (max-width: 767px) {
     .advantages__img-container {
       float: none;
-      height: 70px;
+      height: 80px;
       margin: 0 auto; } }
 
 .advantages__img {
@@ -1839,6 +1843,11 @@ body {
 
 .advantages__item--center p {
   color: #ffffff; }
+  @media (max-width: 767px) {
+    .advantages__item--center p {
+      text-align: center;
+      padding: 0 30px;
+      margin: 0 auto; } }
 
 .advantages__item--center span {
   display: block;
@@ -1885,7 +1894,7 @@ body {
     .advantages__item-center-container {
       margin: 0 auto;
       width: auto;
-      padding: 60px 60px 0;
+      padding: 60px 50px 0;
       display: block;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
@@ -2046,7 +2055,7 @@ body {
       padding-bottom: 40px;
       margin-bottom: 30px; } }
   .actions__item--main {
-    padding: 35px 40px 45px 45px;
+    padding: 30px 40px 45px 40px;
     border: none;
     width: 280px;
     height: 100%; }
@@ -2131,9 +2140,8 @@ body {
       margin-bottom: 100px; } }
   @media (max-width: 767px) {
     .reviews {
-      margin-bottom: 90px;
-      width: 90%;
-      min-width: 290px; } }
+      margin-bottom: 70px;
+      width: 80%; } }
 
 .reviews__headline {
   margin: 0;
@@ -2164,7 +2172,7 @@ body {
   overflow: hidden; }
   @media (max-width: 767px) {
     .reviews__slider {
-      margin: 0 20px; } }
+      margin: 0 15px; } }
 
 .reviews__list {
   list-style: none;
@@ -2182,8 +2190,10 @@ body {
       margin-right: 80px; } }
   @media (max-width: 767px) {
     .reviews__list-item {
+      max-height: 335px;
       max-width: 100%;
-      margin: 0; } }
+      margin: 0;
+      height: 335px; } }
 
 .reviews__list-item img {
   margin-left: 60px;
@@ -2245,7 +2255,7 @@ body {
       width: 100%; } }
   @media (max-width: 767px) {
     .free-session {
-      padding: 65px 15px; } }
+      padding: 70px 15px; } }
 
 .free-session__headline {
   margin: 0;
@@ -2281,7 +2291,8 @@ body {
       width: 100%; } }
   @media (max-width: 767px) {
     .contacts {
-      padding: 73px 15px 0; } }
+      margin-bottom: 50px;
+      padding: 70px 15px 0; } }
 
 .contacts__headline {
   margin: 0;
@@ -2352,7 +2363,7 @@ body {
   @media (max-width: 767px) {
     .contacts__list-item {
       padding: 0;
-      margin-bottom: 12px; } }
+      margin-bottom: 25px; } }
 
 .contacts__list-item a {
   display: block;
@@ -2435,7 +2446,7 @@ body {
       -webkit-box-align: start;
           -ms-flex-align: start;
               align-items: flex-start;
-      padding: 45px 15px; } }
+      padding: 50px 15px; } }
 
 .page-footer__nav {
   display: -webkit-box;
@@ -2512,7 +2523,10 @@ body {
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start;
-      height: 130px; } }
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      height: 135px; } }
 
 .links__item {
   display: -webkit-box;
@@ -2532,7 +2546,7 @@ body {
     .links__item {
       height: 40px;
       margin-left: 0;
-      margin-right: 60px;
+      margin-right: 80px;
       font-size: 16px;
       line-height: 19px; }
       .links__item:first-of-type {
@@ -2647,7 +2661,7 @@ body {
   border-bottom: 1px solid #74819c; }
   @media (max-width: 767px) {
     .form input {
-      margin-bottom: 30px; } }
+      margin-bottom: 20px; } }
   .form input::-webkit-input-placeholder {
     color: #ffffff;
     opacity: 1; }
@@ -2723,7 +2737,8 @@ body {
     opacity: 0.7; }
   @media (max-width: 767px) {
     .form button[type="submit"] {
-      width: 100%; } }
+      width: 100%;
+      margin-top: 20px; } }
 
 .contacts-wrapper {
   display: -webkit-box;
