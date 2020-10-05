@@ -1,5 +1,5 @@
 ## [Fitnes](https://ikzsl.github.io/Fitnes/)
-# Gulp template Liga A
+
 ## Краткая инструкция по работе
 ### Для начала работы у вас должент быть установлен:
 * Node.js v.10.15.3
