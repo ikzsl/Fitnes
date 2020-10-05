@@ -1,9 +1,9 @@
 ## [Fitnes](https://ikzsl.github.io/Fitnes/)
 
 ### Для начала работы у вас должент быть установлен:
-* Node.js v.10.15.3
-* Gulp v4
-* npm last version
+* Node.js
+* Gulp
+* npm
 ## Основные команды для работы
 * Установка - `npm i`
 * Запуск локального сервера - `npm start`
